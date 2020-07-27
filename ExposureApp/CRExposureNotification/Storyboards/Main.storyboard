@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jlw-QH-8yA">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbar Controller-->
+        <scene sceneID="sSz-eX-LnY">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="Jlw-QH-8yA" customClass="TabbarController" customModule="Evidencija_kontakata" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MRx-Lr-GTm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="PrimaryGreen"/>
+                        <color key="selectedImageTintColor" name="PrimaryGreen"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JUk-uM-Q1g" kind="relationship" relationship="viewControllers" id="YoF-i1-OY3"/>
+                        <segue destination="W1n-lV-xjo" kind="relationship" relationship="viewControllers" id="4NB-6H-ul5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpA-Hh-ctA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1350" y="0.0"/>
+        </scene>
+        <!--Exposures-->
+        <scene sceneID="fXm-wn-PMY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Exposures" id="JUk-uM-Q1g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uEC-g4-IF5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yN7-gU-FNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1581" y="483"/>
+        </scene>
+        <!--Notify-->
+        <scene sceneID="sIh-Fj-RuB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notify" id="W1n-lV-xjo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lca-e8-r74"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPO-aa-Qtb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1101" y="483"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="PrimaryGreen">
+            <color red="0.011764705882352941" green="0.74117647058823533" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

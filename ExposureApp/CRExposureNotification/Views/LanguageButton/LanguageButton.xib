@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactDisplay-Semibold.otf">
+            <string>SFCompactDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageButton" customModule="Stop_COVID_19" customModuleProvider="target">
+            <connections>
+                <outlet property="borderView" destination="PeQ-g6-Kpg" id="f7q-hd-MPo"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="3Ys-tu-fby"/>
+                <outlet property="languageImageView" destination="6QT-M2-jYJ" id="rDW-0q-9ni"/>
+                <outlet property="languageLabel" destination="f3u-Mz-9PA" id="e2o-1Q-n9L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-g6-Kpg" userLabel="Border View">
+                    <rect key="frame" x="8" y="8" width="351" height="48"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6QT-M2-jYJ">
+                            <rect key="frame" x="16" y="12" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6QT-M2-jYJ" secondAttribute="height" multiplier="1:1" id="ZXq-8Y-xYT"/>
+                                <constraint firstAttribute="height" constant="24" id="hWw-Zx-YVm"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Croatian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-Mz-9PA" userLabel="Language Label">
+                            <rect key="frame" x="137.66666666666666" y="12" width="75.666666666666657" height="24"/>
+                            <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="20"/>
+                            <color key="textColor" name="TextBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6QT-M2-jYJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PeQ-g6-Kpg" secondAttribute="top" constant="12" id="0fJ-J7-s9J"/>
+                        <constraint firstItem="f3u-Mz-9PA" firstAttribute="centerY" secondItem="PeQ-g6-Kpg" secondAttribute="centerY" id="Gcb-cQ-fYS"/>
+                        <constraint firstItem="f3u-Mz-9PA" firstAttribute="centerX" secondItem="PeQ-g6-Kpg" secondAttribute="centerX" id="KKN-nZ-ZbT"/>
+                        <constraint firstItem="6QT-M2-jYJ" firstAttribute="centerY" secondItem="PeQ-g6-Kpg" secondAttribute="centerY" id="iuC-us-0fZ"/>
+                        <constraint firstItem="6QT-M2-jYJ" firstAttribute="leading" secondItem="PeQ-g6-Kpg" secondAttribute="leading" constant="16" id="qFf-MW-0vy"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6QT-M2-jYJ" secondAttribute="bottom" constant="12" id="x8Z-ZJ-OGX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PeQ-g6-Kpg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2UU-pq-qZY"/>
+                <constraint firstAttribute="trailing" secondItem="PeQ-g6-Kpg" secondAttribute="trailing" constant="8" id="CFH-As-zbc"/>
+                <constraint firstItem="PeQ-g6-Kpg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="PhX-j5-oOC"/>
+                <constraint firstAttribute="bottom" secondItem="PeQ-g6-Kpg" secondAttribute="bottom" constant="8" id="fp6-Bu-wxI"/>
+                <constraint firstItem="PeQ-g6-Kpg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kgt-t0-g09"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="107.97101449275362" y="-132.06521739130434"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextBlack">
+            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

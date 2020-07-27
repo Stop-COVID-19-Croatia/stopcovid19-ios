@@ -1,0 +1,52 @@
+
+/* Class = "UILabel"; text = "Aplikacijske obavijesti su dizajnirane na način da vas obavijeste ako ste bili izloženi drugom korisniku aplikacije koji naknadno prijavi svoj pozitivni laboratorijski nalaz kroz aplikaciju.  Obavijesti o izloženosti oslanjaju se na dijeljenje i prikupljanje nasumičnih identifikatora. Identifikatori su niz brojeva koji Vas ne identificiraju prema drugim korisnicima i mijenjaju se više puta dnevno kako bi zaštitili Vašu privatnost."; ObjectID = "Dqk-Rd-ct3"; */
+"Dqk-Rd-ct3.text" = "Aplikacijske obavijesti su dizajnirane na način da Vas obavijeste ako ste bili izloženi drugom korisniku aplikacije koji naknadno prijavi pozitivni laboratorijski nalaz kroz aplikaciju.
+
+Obavijesti o izloženosti oslanjaju se na dijeljenje i prikupljanje nasumičnih identifikatora. Identifikatori su niz brojeva koji Vas ne identificiraju prema drugim korisnicima i mijenjaju se više puta dnevno kako bi zaštitili Vašu privatnost.";
+
+/* Class = "UILabel"; text = "ISKLJUČENO"; ObjectID = "Jy3-rM-q89"; */
+"Jy3-rM-q89.text" = "ISKLJUČENO";
+/* Class = "UILabel"; text = "App language:"; ObjectID = "XsM-SV-5Qp"; */
+"XsM-SV-5Qp.text" = "Jezik aplikacije:";
+
+/* Class = "UINavigationItem"; title = "Contact Records"; ObjectID = "YQa-vA-nlf"; */
+"YQa-vA-nlf.title" = "Contact Records";
+
+/* Class = "UILabel"; text = "Možete odlučiti ugasiti obavijesti u bilo kojem trenutku."; ObjectID = "bBx-KY-2FT"; */
+"bBx-KY-2FT.text" = "Možete odlučiti ugasiti obavijesti u bilo kojem trenutku.";
+
+/* Class = "UILabel"; text = "Obavijesti o izloženosti na COVID-19"; ObjectID = "lDh-Pq-toz"; */
+"lDh-Pq-toz.text" = "Obavijesti o izloženosti na COVID-19";
+
+/* Class = "UIButton"; normalTitle = "Dalje"; ObjectID = "pFP-5L-5ZQ"; */
+"pFP-5L-5ZQ.normalTitle" = "Dalje";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "ubw-Ej-9XU"; */
+"ubw-Ej-9XU.normalTitle" = "Krenite";
+
+/* Class = "UILabel"; text = "The app cannot identify you or the people you have been in contact with."; ObjectID = "A3r-ql-zgP"; */
+"A3r-ql-zgP.text" = "Aplikacija ne može identificirati Vas niti osobe s kojima ste bili u kontaktu.";
+
+/* Class = "UILabel"; text = "The app does not collect your personal data, like your name, surname, date of birth, address, telephone number etc."; ObjectID = "AYI-bW-M4A"; */
+"AYI-bW-M4A.text" = "Aplikacija ne prikuplja Vaše osobne podatke poput imena, prezimena, datuma rođenja, adrese, broja mobitela itd.";
+
+/* Class = "UILabel"; text = "Your data are saved on the servers in the Republic of Croatia and are controlled by the Ministry of Health."; ObjectID = "ROu-hg-dys"; */
+"ROu-hg-dys.text" = "Vaši podaci su pohranjeni na poslužitelju u Republici Hrvatskoj i njima upravlja Ministarstvo zdravstva.";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "VKJ-qa-KHo"; */
+"VKJ-qa-KHo.normalTitle" = "Dalje";
+
+/* Class = "UILabel"; text = "Your privacy is safe"; ObjectID = "W7r-lJ-NIo"; */
+"W7r-lJ-NIo.text" = "Vaša privatnost je zaštićena";
+
+/* Class = "UILabel"; text = "There is no collection of geolocation data (GPS), your movement is not tracked."; ObjectID = "fxu-ID-yfd"; */
+"fxu-ID-yfd.text" = "Ne prikupljaju se lokacijski podaci (GPS), niti se prati Vaše kretanje.";
+
+/* Class = "UILabel"; text = "The data saved on your device and the connections to the server are encrypted."; ObjectID = "qGU-S4-B4c"; */
+"qGU-S4-B4c.text" = "Podaci koji se spremaju na Vaš uređaj i veza prema poslužitelju su kriptirani.";
+
+/* Class = "UILabel"; text = "New version of the application is available. The new version needs to be downloaded in order to use the application."; ObjectID = "QkY-iX-DFw"; */
+"QkY-iX-DFw.text" = "Dostupna je nova verzija aplikacije. Potrebno je preuzeti novu verziju kako bi mogli koristiti aplikaciju.";
+
+/* Class = "UILabel"; text = "Stop COVID-19"; ObjectID = "VBN-iA-uu0"; */
+"VBN-iA-uu0.text" = "Stop COVID-19";

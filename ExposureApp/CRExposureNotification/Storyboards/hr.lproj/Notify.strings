@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "The notification will be received only by the persons who have been exposed."; ObjectID = "0X6-Mk-GHT"; */
+"0X6-Mk-GHT.text" = "Obavijest će primiti samo osobe koje su bile izložene.";
+
+/* Class = "UIButton"; normalTitle = "Share positive test result"; ObjectID = "3IA-Vp-Uhc"; */
+"3IA-Vp-Uhc.normalTitle" = "Podijelite s drugima";
+
+/* Class = "UILabel"; text = "Share your positive test result"; ObjectID = "4ad-zd-EaE"; */
+"4ad-zd-EaE.text" = "Podijelite informaciju da ste zaraženi";
+
+/* Class = "UILabel"; text = "Confirm result"; ObjectID = "BBT-xI-NfM"; */
+"BBT-xI-NfM.text" = "Slanje ključeva";
+
+/* Class = "UITabBarItem"; title = "Notify Others"; ObjectID = "Khm-F3-ry0"; */
+"Khm-F3-ry0.title" = "Obavijesti druge";
+
+/* Class = "UILabel"; text = "The unique test identifier that came with your COVID-19 test must be used to verify your positive test result."; ObjectID = "aGw-nL-PIa"; */
+"aGw-nL-PIa.text" = "Upišite kod koji ste dobili nakon pozitivnog testiranja na COVID-19 kako bi obavijestili druge.";
+
+/* Class = "UILabel"; text = "Thank you for caring for others!"; ObjectID = "dPr-IB-sbc"; */
+"dPr-IB-sbc.text" = "Hvala što brinete o drugima!";
+
+/* Class = "UILabel"; text = "If you have tested positive for COVID-19, sharing your test result will help notify others who may have been exposed. This will let others in your community know if they should monitor for symptoms."; ObjectID = "rUn-8q-s7t"; */
+"rUn-8q-s7t.text" = "Podjelom informacije da ste zaraženi i slanjem svojih ključeva pomoći ćete ostalima koji su možda bili izloženi.";
+
+/* Class = "UILabel"; text = "The test date helps the app know when you may have been contagious and notify the right people of possible exposure."; ObjectID = "tn9-Kt-9nm"; */
+"tn9-Kt-9nm.text" = "Datum testiranja pomaže aplikaciji u prepoznavanju kada ste potencijalno bili zarazni.";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "zj2-S5-QP3"; */
+"zj2-S5-QP3.normalTitle" = "Potvrdite";

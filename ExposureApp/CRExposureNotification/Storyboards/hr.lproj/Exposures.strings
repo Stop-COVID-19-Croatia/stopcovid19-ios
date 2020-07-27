@@ -1,0 +1,100 @@
+
+/* Class = "UILabel"; text = "You were in proximity to a person who shared their positive Covid-19 test result X days ago. You were near this person on DD.MM.YYYY."; ObjectID = "1iP-G2-WXF"; */
+"1iP-G2-WXF.text" = "Prije X dana bili ste u blizini  osobe koja je prijavila pozitivni laboratorijski nalaz na COVID-19.
+Datum posljednjeg kontakta s zaraženom osobom je bio DD.MM.YYYY.
+";
+
+/* Class = "UILabel"; text = "Done"; ObjectID = "7Ng-KM-4SI"; */
+"7Ng-KM-4SI.text" = "U redu ";
+
+/* Class = "UILabel"; text = "Info"; ObjectID = "ACP-d0-z4J"; */
+"ACP-d0-z4J.text" = "Info";
+
+/* Class = "UILabel"; text = "How does exposure notification for COVID-19 work?"; ObjectID = "Buz-Hb-CSd"; */
+"Buz-Hb-CSd.text" = "Kako radi aplikacija?";
+
+/* Class = "UILabel"; text = "No contacts."; ObjectID = "Kfn-RD-CHy"; */
+"Kfn-RD-CHy.text" = "Nema kontakta.";
+
+/* Class = "UITabBarItem"; title = "Exposures"; ObjectID = "QTH-QQ-hqW"; */
+"QTH-QQ-hqW.title" = "Izloženosti";
+
+/* Class = "UILabel"; text = "Possible exposure 3 days ago"; ObjectID = "VR1-Nc-S0H"; */
+"VR1-Nc-S0H.text" = "Moguća izloženost";
+
+/* Class = "UILabel"; text = "High Risk"; ObjectID = "Wmi-ub-6mv"; */
+"Wmi-ub-6mv.text" = "Visok rizik zaraze";
+
+/* Class = "UILabel"; text = "Next steps:"; ObjectID = "c4r-a9-TJP"; */
+"c4r-a9-TJP.text" = "Slijedeći koraci:";
+
+/* Class = "UILabel"; text = "Application notifications are designed to warn you if you have been exposed to users who subsequently report as testing positive for Covid-19.\n \nExposure notifications rely on the sharing and collecting of randomly generated reference codes. These codes are arbitrary strings of numbers that will not identify you to other users. They are frequently changed during the day in order to protect your privacy."; ObjectID = "g2k-lx-p4d"; */
+"g2k-lx-p4d.text" = "Aplikacijske obavijesti su dizajnirane na način da Vas obavijeste ako ste bili izloženi drugom korisniku aplikacije koji naknadno prijavi pozitivni laboratorijski nalaz kroz aplikaciju.
+
+Obavijesti o izloženosti oslanjaju se na dijeljenje i prikupljanje nasumičnih identifikatora. Identifikatori su niz brojeva koji Vas ne identificiraju prema drugim korisnicima i mijenjaju se više puta dnevno kako bi zaštitili Vašu privatnost.";
+
+/* Class = "UILabel"; text = "Croatian"; ObjectID = "kOp-Gb-EqW"; */
+"kOp-Gb-EqW.text" = "Hrvatski";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "lGD-ke-sXG"; */
+"lGD-ke-sXG.text" = "/";
+
+/* Class = "UILabel"; text = "Contact records"; ObjectID = "uk0-aD-fQ4"; */
+"uk0-aD-fQ4.text" = "Stop COVID-19";
+
+/* Class = "UILabel"; text = "TURNED ON"; ObjectID = "zde-YW-KCs"; */
+"zde-YW-KCs.text" = "Uključeno";
+
+/* Class = "UILabel"; text = "Each device checks if it has had contact with any of the shared codes"; ObjectID = "EFB-KM-fPm"; */
+"EFB-KM-fPm.text" = "Svaki mobitel provjerava je li bio u kontaktu s ključevima koji su podijeljeni";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FOr-sr-Lvg"; */
+"FOr-sr-Lvg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "The app periodically checks the codes on the server and compares them to the codes saved on your device.  This is allows the app to determine if you have been exposed to a potential infection risk."; ObjectID = "Liz-bz-pPZ"; */
+"Liz-bz-pPZ.text" = "Aplikacija povremeno provjerava ključeve koji su podijeljeni s poslužiteljem i uspoređuje ih s ključevima koji su pohranjeni na Vašem mobilnom uređaju. Na taj način aplikacija može odrediti jeste li bili izloženi opasnosti od zaraze.";
+
+/* Class = "UILabel"; text = "No contacts."; ObjectID = "MHT-o3-1BP"; */
+"MHT-o3-1BP.text" = "Nema kontakata.";
+
+/* Class = "UILabel"; text = "Users who test positive can choose if they want to share their random codes "; ObjectID = "MKa-9X-a66"; */
+"MKa-9X-a66.text" = "Osobe koje nakon testiranja dobiju pozitivan nalaz mogu odlučiti žele li podijeliti svoje nasumične ključeve ";
+
+/* Class = "UILabel"; text = "Devices that come into contact exchange their random codes"; ObjectID = "bHS-5K-0HI"; */
+"bHS-5K-0HI.text" = "Mobilni uređaji u blizini razmjenjuju svoje nasumične ključeve";
+
+/* Class = "UILabel"; text = "The app assigns a randomly generated code to each device"; ObjectID = "fkm-Ul-JSi"; */
+"fkm-Ul-JSi.text" = "Aplikacija dodjeljuje nasumične ključeve svim mobitelima";
+
+/* Class = "UILabel"; text = "Find out more:"; ObjectID = "iV3-9W-Ihj"; */
+"iV3-9W-Ihj.text" = "Saznajte više:";
+
+/* Class = "UILabel"; text = "If you have been in contact with a user who tested positive and shared their codes, the app will send you notification and instructions what to do next.  The app does not need or use information where or with whom you came into contact."; ObjectID = "pRl-5y-X93"; */
+"pRl-5y-X93.text" = "Ako ste bili u kontaktu s osobom koja je nakon pozitivnog nalaza podijelila svoje ključeve, dobit ćete obavijest i uputu kako postupiti. Za funkcioniranje aplikaciji nije potreban podatak gdje niti s kime je korisnik bio, tako da je Vaša privatnost zaštićena.";
+
+/* Class = "UILabel"; text = "The codes are generated randomly and do not contain any data about you or your device. In order to protect your privacy, the codes are changed several times an hour. "; ObjectID = "Asi-pn-yP5"; */
+"Asi-pn-yP5.text" = "Ključevi su nasumičan niz znakova i ne sadrže podatke o Vašem uređaju niti Vama. Izmjenjuju se nekoliko puta svakog sata kako bi Vaša privatnost bila zaštićena.";
+
+/* Class = "UILabel"; text = "When you come into contact with another app user your devices exchange their codes via the Bluetooth. This is how the app can keep track of the contact without knowing your identities or where you came into contact. "; ObjectID = "2SB-vn-OOq"; */
+"2SB-vn-OOq.text" = "Kada se nađete u blizini drugog korisnika aplikacije, mobiteli razmjenjuju ključeve putem Bluetooth-a. Na taj način aplikacija može pratiti ostvarene kontakte bez mogućnosti da identificira Vas ni osobu s kojom ste bili u kontaktu.";
+
+/* Class = "UILabel"; text = "Users that have tested positive for COVID-19 can upload the random codes that their devices have sent out over the previous days to a server, making them available to other users. This process is carried out with the help of a special verification code you receive from a health worker only after testing positive for COVID-19."; ObjectID = "yy0-PS-vAh"; */
+"yy0-PS-vAh.text" = "Korisnici koji imaju pozitivan laboratorijski nalaz na poslužitelj mogu poslati svoje nasumične ključeve emitirane u prethodnom razdoblju čime oni postaju dostupni ostalim korisnicima aplikacije. Slanje nasumičnih ključeva ostvaruje se upisivanjem koda koji je za Vas generirao zdravstveni djelatnik nakon što ste dobili pozitivan laboratorijski nalaz na COVID-19.";
+
+/* Class = "UILabel"; text = "User is notified if there is a positive match"; ObjectID = "aLc-yD-5xg"; */
+"aLc-yD-5xg.text" = "Korisnik dobiva obavijest ako je aplikacija pronašla podijeljeni ključ na njegovom mobitelu";
+
+/* Class = "UILabel"; text = "Terms and conditions"; ObjectID = "Txz-uW-8l1"; */
+"Txz-uW-8l1.text" = "Uvjeti korištenja";
+
+/* Class = "UILabel"; text = "Privacy policy"; ObjectID = "d0v-y6-HZ9"; */
+"d0v-y6-HZ9.text" = "Pravila privatnosti";
+
+/* Class = "UILabel"; text = "Accessibility Policy"; ObjectID = "muA-fV-0O5"; */
+"muA-fV-0O5.text" = "Izjava o pristupačnosti";
+
+/* Class = "UILabel"; text = "3rd party license"; ObjectID = "7TI-ki-LgF"; */
+"7TI-ki-LgF.text" = "Programske komponente";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "WO4-z0-3xd"; */
+"WO4-z0-3xd.normalTitle" = "U redu";

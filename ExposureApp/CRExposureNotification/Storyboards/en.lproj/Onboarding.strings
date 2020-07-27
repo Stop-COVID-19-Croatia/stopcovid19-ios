@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "App Store"; ObjectID = "3gp-CK-OZp"; */
+"3gp-CK-OZp.normalTitle" = "App Store";
+
+/* Class = "UILabel"; text = "The app cannot identify you or the people you have been in contact with."; ObjectID = "A3r-ql-zgP"; */
+"A3r-ql-zgP.text" = "The app cannot identify you or the people you have been in contact with.";
+
+/* Class = "UILabel"; text = "The app does not collect your personal data, like your name, surname, date of birth, address, telephone number etc."; ObjectID = "AYI-bW-M4A"; */
+"AYI-bW-M4A.text" = "The app does not collect your personal data, like your name, surname, date of birth, address, telephone number etc.";
+
+/* Class = "UILabel"; text = "Application notifications are designed to warn you if you have been exposed to users who subsequently report as testing positive for Covid-19.\n\nExposure notifications rely on the sharing and collecting of randomly generated reference codes. These codes are arbitrary strings of numbers that will not identify you to other users. They are frequently changed during the day in order to protect your privacy."; ObjectID = "Dqk-Rd-ct3"; */
+"Dqk-Rd-ct3.text" = "Application notifications are designed to warn you if you have been exposed to users who subsequently report as testing positive for Covid-19.\n\nExposure notifications rely on the sharing and collecting of randomly generated reference codes. These codes are arbitrary strings of numbers that will not identify you to other users. They are frequently changed during the day in order to protect your privacy.";
+
+/* Class = "UILabel"; text = "TURNED OFF"; ObjectID = "Jy3-rM-q89"; */
+"Jy3-rM-q89.text" = "TURNED OFF";
+
+/* Class = "UILabel"; text = "New version of the application is available. The new version needs to be downloaded in order to use the application."; ObjectID = "QkY-iX-DFw"; */
+"QkY-iX-DFw.text" = "New version of the application is available. The new version needs to be downloaded in order to use the application.";
+
+/* Class = "UILabel"; text = "Your data are saved on the servers in the Republic of Croatia and are controlled by the Ministry of Health."; ObjectID = "ROu-hg-dys"; */
+"ROu-hg-dys.text" = "Your data are saved on the servers in the Republic of Croatia and are controlled by the Ministry of Health.";
+
+/* Class = "UILabel"; text = "Stop COVID-19"; ObjectID = "VBN-iA-uu0"; */
+"VBN-iA-uu0.text" = "Stop COVID-19";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "VKJ-qa-KHo"; */
+"VKJ-qa-KHo.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "Your privacy is safe"; ObjectID = "W7r-lJ-NIo"; */
+"W7r-lJ-NIo.text" = "Your privacy is safe";
+
+/* Class = "UILabel"; text = "Language:"; ObjectID = "XsM-SV-5Qp"; */
+"XsM-SV-5Qp.text" = "Language:";
+
+/* Class = "UINavigationItem"; title = "Contact Records"; ObjectID = "YQa-vA-nlf"; */
+"YQa-vA-nlf.title" = "Contact Records";
+
+/* Class = "UILabel"; text = "You can choose to turn off these notifications at any time."; ObjectID = "bBx-KY-2FT"; */
+"bBx-KY-2FT.text" = "You can choose to turn off these notifications at any time.";
+
+/* Class = "UILabel"; text = "There is no collection of geolocation data (GPS), your movement is not tracked."; ObjectID = "fxu-ID-yfd"; */
+"fxu-ID-yfd.text" = "There is no collection of geolocation data (GPS), your movement is not tracked.";
+
+/* Class = "UILabel"; text = "Turn on COVID-19 Exposure Notifications"; ObjectID = "lDh-Pq-toz"; */
+"lDh-Pq-toz.text" = "Turn on COVID-19 Exposure Notifications";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "pFP-5L-5ZQ"; */
+"pFP-5L-5ZQ.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "The data saved on your device and the connections to the server are encrypted."; ObjectID = "qGU-S4-B4c"; */
+"qGU-S4-B4c.text" = "The data saved on your device and the connections to the server are encrypted.";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "ubw-Ej-9XU"; */
+"ubw-Ej-9XU.normalTitle" = "Get Started";

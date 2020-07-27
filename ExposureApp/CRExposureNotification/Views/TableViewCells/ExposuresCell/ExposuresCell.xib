@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactText-Regular.otf">
+            <string>SFCompactText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExposuresCell" customModule="Stop_COVID_19" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znt-6A-Fyb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-risk-high-details" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-sr-kcq">
+                                <rect key="frame" x="109.5" y="24" width="101" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RAQ-sr-kcq" secondAttribute="height" multiplier="1:1" id="WIh-Be-d2c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High risk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2b-ox-JRj">
+                                <rect key="frame" x="16" y="141" width="288" height="143"/>
+                                <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="15"/>
+                                <color key="textColor" name="PrimaryRed"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ah-MV-Yz0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <connections>
+                                    <action selector="didClickItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="T6Q-es-Xyu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RAQ-sr-kcq" firstAttribute="top" secondItem="Znt-6A-Fyb" secondAttribute="top" constant="24" id="8ma-1s-gTq"/>
+                            <constraint firstItem="S2b-ox-JRj" firstAttribute="leading" secondItem="Znt-6A-Fyb" secondAttribute="leading" constant="16" id="PN9-aG-uVw"/>
+                            <constraint firstItem="S2b-ox-JRj" firstAttribute="top" secondItem="RAQ-sr-kcq" secondAttribute="bottom" constant="16" id="WNu-4l-Hei"/>
+                            <constraint firstAttribute="bottom" secondItem="5ah-MV-Yz0" secondAttribute="bottom" id="Xhw-Wf-TFh"/>
+                            <constraint firstItem="5ah-MV-Yz0" firstAttribute="leading" secondItem="Znt-6A-Fyb" secondAttribute="leading" id="evB-bC-TLW"/>
+                            <constraint firstAttribute="trailing" secondItem="5ah-MV-Yz0" secondAttribute="trailing" id="g5k-hL-mEZ"/>
+                            <constraint firstAttribute="trailing" secondItem="S2b-ox-JRj" secondAttribute="trailing" constant="16" id="jbk-iR-SFA"/>
+                            <constraint firstItem="5ah-MV-Yz0" firstAttribute="top" secondItem="Znt-6A-Fyb" secondAttribute="top" id="kyC-Nz-BlF"/>
+                            <constraint firstAttribute="bottom" secondItem="S2b-ox-JRj" secondAttribute="bottom" constant="16" id="n6o-jN-rfe"/>
+                            <constraint firstItem="RAQ-sr-kcq" firstAttribute="centerX" secondItem="Znt-6A-Fyb" secondAttribute="centerX" id="sjC-7I-SiO"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-Uc-Ntc">
+                        <rect key="frame" x="0.0" y="299" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="28z-p4-cI5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Nu3-Uc-Ntc" secondAttribute="bottom" id="3Uo-gi-apj"/>
+                    <constraint firstAttribute="trailing" secondItem="Znt-6A-Fyb" secondAttribute="trailing" id="a4G-dp-0V1"/>
+                    <constraint firstAttribute="trailing" secondItem="Nu3-Uc-Ntc" secondAttribute="trailing" id="raO-dt-4ft"/>
+                    <constraint firstAttribute="bottom" secondItem="Znt-6A-Fyb" secondAttribute="bottom" id="ryZ-KL-PZ5"/>
+                    <constraint firstItem="Nu3-Uc-Ntc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uzI-ek-Zln"/>
+                    <constraint firstItem="Znt-6A-Fyb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wUY-KP-vYd"/>
+                    <constraint firstItem="Znt-6A-Fyb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yog-k4-1TY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-risk-high-details" width="101" height="101"/>
+        <namedColor name="PrimaryRed">
+            <color red="1" green="0.0" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

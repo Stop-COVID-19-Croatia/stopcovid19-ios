@@ -1,0 +1,94 @@
+//MARK: URL
+"TermsUrl" = "https://stopcovid19.zdravlje.hr/html/uvjeti-koristenja.html";
+"PrivacyUrl" = "https://stopcovid19.zdravlje.hr/html/pravila-privatnosti.html";
+"AccessibilityUrl" = "https://stopcovid19.zdravlje.hr/html/izjava-pristupacnosti.html";
+"LicenseUrl" = "https://stopcovid19.zdravlje.hr/html/komponente.html";
+
+// MARK: ErrorHandler
+"ErrorHandler.InternalError" = "Dogodila se pogreška. Molimo pokušajte ponovo kasnije.";
+"ErrorHandler.NoInternetError" = "Nije dostupna internetska veza. Povežite se i pokušajte ponovo.";
+"ErrorHandler.Invalid" = "Autorizacijski kod nije ispravan";
+"ErrorHandler.Expired" = "Autorizacijski kod je istekao";
+"ErrorHandler.InvalidCall" = "Neispravan poziv";
+"ErrorHandler.InternalExposure" = "Vaš uređaj nije kompatibilan s Exposure Api";
+
+// MARK: Alert Info
+"AlertInfo.Title" = "Informacije";
+"AlertInfo.NegativeText" = "Otkazati";
+"AlertInfo.PositiveText" = "U redu";
+
+// MARK: Alert Error
+"ErrorAlert.Title" = "Greška";
+"ErrorAlert.PositiveText" = "U redu";
+
+// MARK: Language
+"Language.ShortTitleEn" = "EN";
+"Language.ShortTitleHr" = "HR";
+
+"Language.TitleEn" = "English";
+"Language.TitleHr" = "Croatian";
+
+"Language.LanguageCodeEn" = "en-GB";
+"Language.LanguageCodeHr" = "hr-HR";
+
+// MARK: ONBOARDING CONTROLLERS
+//OnboardingInitialController
+"OnboardingInitialController.AppLanguage" = "Jezik aplikacije:";
+"OnboardingInitialController.Croatian" = "Hrvatski";
+"OnboardingInitialController.English" = "Engleski";
+"OnboardingInitialController.Continue" = "Krenite";
+
+// MARK: MAIN CONTROLLERS
+//ExposuresController
+"ExposuresController.Title" = "Stop COVID-19";
+"ExposuresController.On" = "UKLJUČENO";
+"ExposuresController.Off" = "ISKLJUČENO";
+"ExposuresController.ExposureDetectionDescription" = "Nema kontakta.";
+"ExposuresController.OnMessage" = "Aplikacija bilježi kontakte s drugim uređajima u blizini.";
+"ExposuresController.OffMessage" = "Aplikacija ne bilježi kontakte s drugim uređajima u blizini.";
+"ExposuresController.BluetoothOff" = "Bluetooth mora biti uključen kako bi Vaš mobilni uređaj sigurno mogao prikupljati i dijeliti nasumične ključeve s drugim mobilnim uređajima u blizini.";
+
+// ExposuresDetailsController
+"ExposuresDetailsController.YouHaveBeenInContact" = "%@ bili ste u blizini osobe koja je prijavila pozitivan test na COVID-19.";
+"ExposuresDetailsController.Day" = "%@ dan";
+"ExposuresDetailsController.Days" = "%@ dana";
+
+// MARK: NOTIFY CONTROLLERS
+// NotifyIntialCOntroller
+"NotifyInitialController.Title" = "Podijelite informaciju da ste zaraženi";
+"NotifyInitialController.Description" = "Podjelom informacije da ste zaraženi i slanjem svojih ključeva pomoći ćete ostalima koji su možda bili izloženi.";
+"NotifyInitialController.ShareDiagnosisButtonTitle" = "Podijelite s drugima";
+"NotifyInitialController.ListOfInfection" = "POPIS INFORMACIJA O ZARAZI";
+
+// ConfirmResultController
+
+"ConfirmResultController.DatePickerTitle" = "Odaberite datum testiranja";
+"ConfirmResultController.TestIdentifier" = "UPIŠITE KOD";
+"ConfirmResultController.DateOfTest" = "Unesi datum testiranja";
+"ConfirmResultController.ThankYouForSharingYourTestResult" = "Hvala što brinete o drugima.";
+
+// MARK: TableViewCells
+// PositiveTestCell
+"PositiveTestCell.Title" = "COVID-19 pozitivan";
+"PositiveTestCell.DateFormat" = "Podijeljeno %@";
+"PositiveTestCell.Appreciation" = "Hvala što brinete o drugima!";
+
+//MARK: TabbarController
+"TabbarController.Exposures" = "Izloženosti";
+"TabbarController.NotifyOthers" = "Obavijesti druge";
+
+//MARK: TransmissionRisk
+"TransmissionRisk.TitleLow" = "Nizak rizik zaraze";
+"TransmissionRisk.TitleMedium" = "Srednji rizik zaraze";
+"TransmissionRisk.TitleHigh" = "Visok rizik zaraze";
+
+"TransmissionRisk.RiskShortDescriptionLow" = "Bili ste u kontaktu sa zaraženom osobom.";
+"TransmissionRisk.RiskShortDescriptionMedium" = "Bili ste u rizičnom kontaktu sa zaraženom osobom.";
+"TransmissionRisk.RiskShortDescriptionHigh" = "Bili ste u bliskom visoko rizičnom kontaktu sa zaraženom osobom.";
+
+"TransmissionRisk.RiskLongDescriptionLow" = "Pratite svoje simptome narednih dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionMedium" = "Pratite svoje simptome narednih dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionHigh" = "Ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+
+//ExposureManager
+"ExposureManager.Message" = "Bili ste u kontaktu sa zaraženom osobom. Molimo Vas da slijedite daljnje upute.";

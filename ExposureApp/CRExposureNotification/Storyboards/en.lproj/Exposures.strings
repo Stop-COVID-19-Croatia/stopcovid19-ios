@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "/"; ObjectID = "1iP-G2-WXF"; */
+"1iP-G2-WXF.text" = "/";
+
+/* Class = "UILabel"; text = "When you are near another user of the application, mobile phones exchange keys via Bluetooth. This way, the application can track the contacts made without the ability to identify you or the person you were in contact with."; ObjectID = "2SB-vn-OOq"; */
+"2SB-vn-OOq.text" = "When you are near another user of the application, mobile phones exchange keys via Bluetooth. This way, the application can track the contacts made without the ability to identify you or the person you were in contact with.";
+
+/* Class = "UILabel"; text = "Done"; ObjectID = "7Ng-KM-4SI"; */
+"7Ng-KM-4SI.text" = "Done";
+
+/* Class = "UILabel"; text = "Software Components"; ObjectID = "7TI-ki-LgF"; */
+"7TI-ki-LgF.text" = "Software Components";
+
+/* Class = "UILabel"; text = "Info"; ObjectID = "ACP-d0-z4J"; */
+"ACP-d0-z4J.text" = "Info";
+
+/* Class = "UILabel"; text = "These keys are a random string of characters and do not contain information about your device or you. They rotate several times every hour to keep your privacy protected."; ObjectID = "Asi-pn-yP5"; */
+"Asi-pn-yP5.text" = "These keys are a random string of characters and do not contain information about your device or you. They rotate several times every hour to keep your privacy protected.";
+
+/* Class = "UILabel"; text = "How the app works?"; ObjectID = "Buz-Hb-CSd"; */
+"Buz-Hb-CSd.text" = "How the app works?";
+
+/* Class = "UILabel"; text = "Each device checks if it has had contact with any of the shared keys"; ObjectID = "EFB-KM-fPm"; */
+"EFB-KM-fPm.text" = "Each device checks if it has had contact with any of the shared keys";
+
+/* Class = "UILabel"; text = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk."; ObjectID = "Liz-bz-pPZ"; */
+"Liz-bz-pPZ.text" = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk.";
+
+/* Class = "UILabel"; text = "The application does not record contacts with other devices in the proximity."; ObjectID = "MHT-o3-1BP"; */
+"MHT-o3-1BP.text" = "The application does not record contacts with other devices in the proximity.";
+
+/* Class = "UILabel"; text = "Users who test positive can choose if they want to share their random keys"; ObjectID = "MKa-9X-a66"; */
+"MKa-9X-a66.text" = "Users who test positive can choose if they want to share their random keys";
+
+/* Class = "UITabBarItem"; title = "Exposures"; ObjectID = "QTH-QQ-hqW"; */
+"QTH-QQ-hqW.title" = "Exposures";
+
+/* Class = "UILabel"; text = "Terms of Use"; ObjectID = "Txz-uW-8l1"; */
+"Txz-uW-8l1.text" = "Terms of Use";
+
+/* Class = "UILabel"; text = "Possible exposure"; ObjectID = "VR1-Nc-S0H"; */
+"VR1-Nc-S0H.text" = "Possible exposure";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "WO4-z0-3xd"; */
+"WO4-z0-3xd.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "Wmi-ub-6mv"; */
+"Wmi-ub-6mv.text" = "/";
+
+/* Class = "UILabel"; text = "User is notified if there is a positive match"; ObjectID = "aLc-yD-5xg"; */
+"aLc-yD-5xg.text" = "User is notified if there is a positive match";
+
+/* Class = "UILabel"; text = "Devices that come into contact exchange their random keys"; ObjectID = "bHS-5K-0HI"; */
+"bHS-5K-0HI.text" = "Devices that come into contact exchange their random keys";
+
+/* Class = "UILabel"; text = "Next steps:"; ObjectID = "c4r-a9-TJP"; */
+"c4r-a9-TJP.text" = "Next steps:";
+
+/* Class = "UILabel"; text = "Privacy Notice"; ObjectID = "d0v-y6-HZ9"; */
+"d0v-y6-HZ9.text" = "Privacy Notice";
+
+/* Class = "UILabel"; text = "The app assigns a randomly generated keys to each device"; ObjectID = "fkm-Ul-JSi"; */
+"fkm-Ul-JSi.text" = "The app assigns a randomly generated keys to each device";
+
+/* Class = "UILabel"; text = "Find out more:"; ObjectID = "iV3-9W-Ihj"; */
+"iV3-9W-Ihj.text" = "Find out more:";
+
+/* Class = "UILabel"; text = "EN"; ObjectID = "kOp-Gb-EqW"; */
+"kOp-Gb-EqW.text" = "EN";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "lGD-ke-sXG"; */
+"lGD-ke-sXG.text" = "/";
+
+/* Class = "UILabel"; text = "Accessibility Statement"; ObjectID = "muA-fV-0O5"; */
+"muA-fV-0O5.text" = "Accessibility Statement";
+
+/* Class = "UILabel"; text = "If you have been in contact with a user who tested positive and shared their keys, the app will send you notification and instructions what to do next.  The app does not need or use information where or with whom you came into contact."; ObjectID = "pRl-5y-X93"; */
+"pRl-5y-X93.text" = "If you have been in contact with a user who tested positive and shared their keys, the app will send you notification and instructions what to do next.  The app does not need or use information where or with whom you came into contact.";
+
+/* Class = "UILabel"; text = "Stop COVID-19"; ObjectID = "uk0-aD-fQ4"; */
+"uk0-aD-fQ4.text" = "Stop COVID-19";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "wUK-ZL-yH4"; */
+"wUK-ZL-yH4.normalTitle" = "Close";
+
+/* Class = "UILabel"; text = "High risk"; ObjectID = "xgC-dh-Rj7"; */
+"xgC-dh-Rj7.text" = "High risk";
+
+/* Class = "UILabel"; text = "Users who have a positive laboratory result can send their random keys broadcasted in the previous period to the server, making them available to other users of the application. Random keys are sent by entering the code generated for users by a healthcare professional after they have received a positive laboratory test on COVID-19."; ObjectID = "yy0-PS-vAh"; */
+"yy0-PS-vAh.text" = "Users who have a positive laboratory result can send their random keys broadcasted in the previous period to the server, making them available to other users of the application. Random keys are sent by entering the code generated for users by a healthcare professional after they have received a positive laboratory test on COVID-19.";
+
+/* Class = "UILabel"; text = "TURNED ON"; ObjectID = "zde-YW-KCs"; */
+"zde-YW-KCs.text" = "TURNED ON";

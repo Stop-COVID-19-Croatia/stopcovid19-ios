@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CRExposureNotification' do
+  pod 'Alamofire', '4.9.0'
+  pod 'ObjectMapper', '3.5.1'
+  pod 'NVActivityIndicatorView', '4.8.0'
+  pod 'SwiftProtobuf', '~> 1.0'
+  pod 'Zip', '1.1.0'
+end

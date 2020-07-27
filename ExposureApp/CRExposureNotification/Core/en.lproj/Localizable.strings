@@ -1,0 +1,94 @@
+//MARK: URL
+"TermsUrl" = "https://stopcovid19.zdravlje.hr/html/terms.html";
+"PrivacyUrl" = "https://stopcovid19.zdravlje.hr/html/privacy-policy.html";
+"AccessibilityUrl" = "https://stopcovid19.zdravlje.hr/html/accessibility-policy.html";
+"LicenseUrl" = "https://stopcovid19.zdravlje.hr/html/components.html";
+
+// MARK: ErrorHandler
+"ErrorHandler.InternalError" = "An error occurred. Please try again later.";
+"ErrorHandler.NoInternetError" = "No Internet connection available. Connect and try again.";
+"ErrorHandler.Invalid" = "Invalid code";
+"ErrorHandler.Expired" = "Expired code";
+"ErrorHandler.InvalidCall" = "Invalid call";
+"ErrorHandler.InternalExposure" = "Exposure api is not available on this device";
+
+// MARK: Alert Info
+"AlertInfo.Title" = "Info";
+"AlertInfo.NegativeText" = "Cancel";
+"AlertInfo.PositiveText" = "Ok";
+
+// MARK: Alert Error
+"ErrorAlert.Title" = "Error";
+"ErrorAlert.PositiveText" = "Ok";
+
+// MARK: Language
+"Language.ShortTitleEn" = "EN";
+"Language.ShortTitleHr" = "HR";
+
+"Language.TitleEn" = "English";
+"Language.TitleHr" = "Croatian";
+
+"Language.LanguageCodeEn" = "en-GB";
+"Language.LanguageCodeHr" = "hr-HR";
+
+// MARK: ONBOARDING CONTROLLERS
+//OnboardingInitialController
+"OnboardingInitialController.AppLanguage" = "Language:";
+"OnboardingInitialController.Croatian" = "Croatian";
+"OnboardingInitialController.English" = "English";
+"OnboardingInitialController.Continue" = "Get Started";
+
+// MARK: MAIN CONTROLLERS
+//ExposuresController
+"ExposuresController.Title" = "Stop COVID-19";
+"ExposuresController.On" = "TURNED ON";
+"ExposuresController.Off" = "TURNED OFF";
+"ExposuresController.ExposureDetectionDescription" = "No contacts.";
+"ExposuresController.OnMessage" = "The application records contacts with other devices in the proximity.";
+"ExposuresController.OffMessage" = "The application does not record contacts with other devices in the proximity.";
+"ExposuresController.BluetoothOff" = "Bluetooth must be enabled for the Exposure api to function properly.";
+
+// ExposuresDetailsController
+"ExposuresDetailsController.YouHaveBeenInContact" = "%@ you were in proximity to a person who shared their positive Covid-19 test result.";
+"ExposuresDetailsController.Day" = "%@ day";
+"ExposuresDetailsController.Days" = "%@ days";
+
+// MARK: NOTIFY CONTROLLERS
+// NotifyIntialCOntroller
+"NotifyInitialController.Title" = "Share the information that you are infected";
+"NotifyInitialController.Description" = "Sharing information that you are infected and sending your keys will help others who may have been exposed.";
+"NotifyInitialController.ShareDiagnosisButtonTitle" = "Share with others";
+"NotifyInitialController.ListOfInfection" = "LIST OF INFECTIONS";
+
+// ConfirmResultController
+
+"ConfirmResultController.DatePickerTitle" = "Pick test date";
+"ConfirmResultController.TestIdentifier" = "ENTER CODE";
+"ConfirmResultController.DateOfTest" = "Date of test";
+"ConfirmResultController.ThankYouForSharingYourTestResult" = "Thank you for caring for others.";
+
+// MARK: TableViewCells
+// PositiveTestCell
+"PositiveTestCell.Title" = "COVID-19 positive";
+"PositiveTestCell.DateFormat" = "Shared on %@";
+"PositiveTestCell.Appreciation" = "Thank you for caring for others!";
+
+//MARK: TabbarController
+"TabbarController.Exposures" = "Exposures";
+"TabbarController.NotifyOthers" = "Notify Others";
+
+//MARK: TransmissionRisk
+"TransmissionRisk.TitleLow" = "Low Risk of infection";
+"TransmissionRisk.TitleMedium" = "Medium risk of infection";
+"TransmissionRisk.TitleHigh" = "High risk of infection";
+
+"TransmissionRisk.RiskShortDescriptionLow" = "You were in contact with an infected person.";
+"TransmissionRisk.RiskShortDescriptionMedium" = "You were in medium risk contact with an infected person.";
+"TransmissionRisk.RiskShortDescriptionHigh" = "You were in a high risk contact with an infected person.";
+
+"TransmissionRisk.RiskLongDescriptionLow" = "Check your symptoms regularly during the next two weeks using the application Andrija. Wear a mask when leaving your home and avoid contact with the elderly. If you develop symptoms, stay at home and call your doctor who will give you further instructions. Tell him you have this application installed.";
+"TransmissionRisk.RiskLongDescriptionMedium" = "Check your symptoms regularly during the next two weeks using the application Andrija. Wear a mask when leaving your home and avoid contact with the elderly. If you develop symptoms, stay at home and call your doctor who will give you further instructions. Tell him you have this application installed.";
+"TransmissionRisk.RiskLongDescriptionHigh" = "Stay at home and call your doctor, he will give you further instructions. Tell him that you have this application installed.";
+
+//ExposureManager
+"ExposureManager.Message" = "You were in contact with an infected person. Please follow further instructions.";

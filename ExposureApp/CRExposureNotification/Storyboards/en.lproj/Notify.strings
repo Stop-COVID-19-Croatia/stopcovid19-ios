@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "The notification will be received only by the persons who have been exposed."; ObjectID = "0X6-Mk-GHT"; */
+"0X6-Mk-GHT.text" = "The notification will be received only by the persons who have been exposed.";
+
+/* Class = "UILabel"; text = "LIST OF INFECTIONS"; ObjectID = "2tM-4e-lTI"; */
+"2tM-4e-lTI.text" = "LIST OF INFECTIONS";
+
+/* Class = "UIButton"; normalTitle = "Share with others"; ObjectID = "3IA-Vp-Uhc"; */
+"3IA-Vp-Uhc.normalTitle" = "Share with others";
+
+/* Class = "UILabel"; text = "Share the information that you are infected"; ObjectID = "4ad-zd-EaE"; */
+"4ad-zd-EaE.text" = "Share the information that you are infected";
+
+/* Class = "UILabel"; text = "Share keys"; ObjectID = "BBT-xI-NfM"; */
+"BBT-xI-NfM.text" = "Share keys";
+
+/* Class = "UITabBarItem"; title = "Notify Others"; ObjectID = "Khm-F3-ry0"; */
+"Khm-F3-ry0.title" = "Notify Others";
+
+/* Class = "UILabel"; text = "Enter the code you received after a positive COVID-19 test to inform others."; ObjectID = "aGw-nL-PIa"; */
+"aGw-nL-PIa.text" = "Enter the code you received after a positive COVID-19 test to inform others.";
+
+/* Class = "UILabel"; text = "Thank you for caring for others!"; ObjectID = "dPr-IB-sbc"; */
+"dPr-IB-sbc.text" = "Thank you for caring for others!";
+
+/* Class = "UILabel"; text = "Sharing information that you are infected and sending your keys will help others who may have been exposed."; ObjectID = "rUn-8q-s7t"; */
+"rUn-8q-s7t.text" = "Sharing information that you are infected and sending your keys will help others who may have been exposed.";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "zj2-S5-QP3"; */
+"zj2-S5-QP3.normalTitle" = "Confirm";

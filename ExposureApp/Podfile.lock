@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.9.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjectMapper (3.5.1)
+  - SwiftProtobuf (1.10.0)
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.0)
+  - NVActivityIndicatorView (= 4.8.0)
+  - ObjectMapper (= 3.5.1)
+  - SwiftProtobuf (~> 1.0)
+  - Zip (= 1.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - SwiftProtobuf
+    - Zip
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SwiftProtobuf: bfafffa9e26d1561c3bd0045e188c4fab5f527ae
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 69375b492b584c656a9b0d90925d927fa81adb04
+
+COCOAPODS: 1.8.4
