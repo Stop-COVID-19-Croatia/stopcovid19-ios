@@ -13,7 +13,7 @@ class UIUtil {
             UIUtil.presentOnboardingInitialController()
             return
         }
-        ExposureManager.determineAuthorizationStatus()
+        
         if ExposureManager.getAuthorizationStatus() == .authorized {
            setTabs(selectedIndex: 0)
         } else {

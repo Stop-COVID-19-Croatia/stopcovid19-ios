@@ -21,21 +21,6 @@ class ExposureManager {
         }
     }
     
-    static func determineAuthorizationStatus() {
-        switch ENManager.authorizationStatus {
-        case .unknown:
-            print("unknown")
-        case .restricted:
-            print("restricted")
-        case .notAuthorized:
-            print("notAuthorized")
-        case .authorized:
-            print("authorized")
-        @unknown default:
-            print("unknown")
-        }
-    }
-    
     static func getAuthorizationStatus() -> ENAuthorizationStatus {
         return ENManager.authorizationStatus
     }
