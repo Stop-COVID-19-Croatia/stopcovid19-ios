@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        ExposureManager.shared
+        let _ = ExposureManager.shared
         Language.setDefaultLanguage(language: Language.getDefaultLanguage())
         UNUserNotificationCenter.current().delegate = self
         
