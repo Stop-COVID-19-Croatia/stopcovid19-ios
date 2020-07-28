@@ -28,7 +28,9 @@ class Loader: UIView {
     func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: Loader.self)
         let nib = UINib(nibName: className, bundle: bundle)
-        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
+            fatalError("Unexpected Logic Error. \(nib) view not found.")
+        }
         return view
     }
     
