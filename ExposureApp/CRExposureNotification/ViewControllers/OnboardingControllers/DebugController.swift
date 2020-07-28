@@ -8,11 +8,12 @@ class DebugController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let progress = detectExposures { success in
+        detectExposures { success in
         }
     }
     var detectingExposures = false
-    
+
+    @discardableResult
     func detectExposures(completionHandler: ((Bool) -> Void)? = nil) -> Progress {
         
         let progress = Progress()
