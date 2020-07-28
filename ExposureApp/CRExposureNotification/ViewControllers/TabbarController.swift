@@ -10,12 +10,21 @@ class TabbarController: UITabBarController {
     }
     
     public func languageChanged(){
-        if let controller = self.viewControllers?[0]{
+        if let controller = self.viewControllers?.first {
             controller.title = "TabbarController.Exposures".localized()
         }
         
-        if let controller = self.viewControllers?[1]{
+        if let controller = self.viewControllers?.elementOrNil(at: 1) {
             controller.title = "TabbarController.NotifyOthers".localized()
         }
+    }
+}
+
+public extension Array {
+    func elementOrNil(at index: Int) -> Element? {
+        guard indices.contains(index) else {
+            return nil
+        }
+        return self[index]
     }
 }
