@@ -1,4 +1,5 @@
 import UIKit
+import ExposureNotification
 
 class UIUtil {
     
@@ -9,12 +10,13 @@ class UIUtil {
     }
     
     static func presentMainController() {
-        if !(Storage.readObject(key: StorageKeys.onboardingPassed) as? Bool ?? false) {
+        if !(LocalStorage.shared.onboardingPassed) {
             UIUtil.presentOnboardingInitialController()
             return
         }
-        ExposureManager.determineAuthorizationStatus()
-        if ExposureManager.getAuthorizationStatus() == .authorized {
+        if ENManager.authorizationStatus == .authorized && ExposureManager.shared.manager.exposureNotificationStatus == .active {
+            _ = ExposureManager.shared.detectExposures { success in
+            }
            setTabs(selectedIndex: 0)
         } else {
             UIUtil.presentPrivacyController()
@@ -89,9 +91,11 @@ class UIUtil {
         viewController.present(alert, animated: true)
     }
     
-    static func showErrorAlert(viewController: UIViewController, title: String? = "ErrorAlert.Title", message: String) {
+    static func showErrorAlert(viewController: UIViewController, title: String? = "ErrorAlert.Title", message: String, handler: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title?.localized(), message: message, preferredStyle: .alert)
-        let okayButton = UIAlertAction(title: "ErrorAlert.PositiveText".localized(), style: .default)
+        let okayButton = UIAlertAction(title: "ErrorAlert.PositiveText".localized(), style: .default) { _ in
+            handler?()
+        }
         alert.addAction(okayButton)
         viewController.present(alert, animated: true, completion: nil)
     }

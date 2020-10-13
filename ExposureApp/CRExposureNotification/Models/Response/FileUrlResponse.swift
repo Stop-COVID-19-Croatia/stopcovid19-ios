@@ -8,8 +8,6 @@ class FileUrlResponse: Mappable {
         urlList <- map["urlList"]
     }
     
-    required init?(map: Map) { }
-    
     var uniqUrlList: [String] {
         get {
             var uniqUrlList:[String] = []
@@ -23,9 +21,9 @@ class FileUrlResponse: Mappable {
                 uniqUrlList.removeAll(where: {LocalStorage.shared.urlCheckedList.contains($0)})
             }
             
-            print(("Response.urlList = \(urlList.count)"))
-            print(("UniqUrlList = \(uniqUrlList.count)"))
             return uniqUrlList
         }
     }
+    
+    required init?(map: Map) { }
 }

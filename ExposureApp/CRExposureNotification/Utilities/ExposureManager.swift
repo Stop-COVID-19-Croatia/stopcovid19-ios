@@ -2,52 +2,19 @@ import Foundation
 import UIKit
 import ExposureNotification
 
-extension Notification.Name {
-    static let updateExposureController = Notification.Name(NotificationEnum.updateExposureController.rawValue)
-    static let updateBluetooth = Notification.Name(NotificationEnum.updateBluetooth.rawValue)
-}
-
 class ExposureManager {
     
     static let shared = ExposureManager()
     let manager = ENManager()
     
     init() {
-        manager.activate { _ in
-            if ENManager.authorizationStatus == .authorized && !self.manager.exposureNotificationEnabled {
-                self.manager.setExposureNotificationEnabled(true) { _ in
-                }
-            }
-        }
+        manager.activate { _ in }
     }
     
-    static func determineAuthorizationStatus() {
-        switch ENManager.authorizationStatus {
-        case .unknown:
-            print("unknown")
-        case .restricted:
-            print("restricted")
-        case .notAuthorized:
-            print("notAuthorized")
-        case .authorized:
-            print("authorized")
-        @unknown default:
-            print("unknown")
-        }
-    }
-    
-    static func getAuthorizationStatus() -> ENAuthorizationStatus {
-        return ENManager.authorizationStatus
-    }
-    
-    static func isBluetoothOff() -> Bool {
-        return ENManager.authorizationStatus == .authorized && ExposureManager.shared.manager.exposureNotificationStatus == .bluetoothOff 
-    }
-    
-    static func setEnableExposureNotifications(isEnabled: Bool, completionHandler: @escaping (Bool, CustomError?) -> Void) {
+    static func setEnableExposureNotifications(isEnabled: Bool, completionHandler: @escaping (CustomError?) -> Void) {
         ExposureManager.shared.manager.setExposureNotificationEnabled(isEnabled) { error in
             let customError = error != nil ? CustomError(error: error?.localizedDescription ?? Constants.emptyStringPreview, errorCode: .internalExposure) : nil
-            completionHandler(error == nil, customError)
+            completionHandler(customError)
         }
     }
     
@@ -68,7 +35,6 @@ class ExposureManager {
             let customError = error != nil ? CustomError(error: error?.localizedDescription ?? Constants.emptyStringPreview, errorCode: .internalExposure) : nil
             completionHandler(keys, customError)
         }
-        
     }
     
     static func getTemporaryExposureKeysForTesting(completionHandler: @escaping ([TemporaryExposureKeyInput], CustomError?) -> Void) {
@@ -84,7 +50,6 @@ class ExposureManager {
             let customError = error != nil ? CustomError(error: error?.localizedDescription ?? Constants.emptyStringPreview, errorCode: .internalExposure) : nil
             completionHandler(keys, customError)
         }
-        
     }
     
     var detectingExposures = false
@@ -98,6 +63,7 @@ class ExposureManager {
             completionHandler?(false)
             return progress
         }
+        
         detectingExposures = true
         
         var localURLs = [URL]()
@@ -123,6 +89,7 @@ class ExposureManager {
                             self.scheduleNotification(transmissionRisk: transmissionRisk)
                         }
                     }
+                    
                     LocalStorage.shared.dateLastPerformedExposureDetection = Date()
                     LocalStorage.shared.exposureDetectionErrorLocalizedDescription = nil
                     LocalStorage.shared.urlCheckedList.append(contentsOf: urlCheckedList)
@@ -156,10 +123,10 @@ class ExposureManager {
                     case let .success(urls):
                         localURLs.append(contentsOf: urls)
                     case let .failure(error):
-                        finish(.failure(error))
-                        return
+                        print("\(error.localizedDescription)")
                     }
                 }
+                
                 ConfigurationProvider.getExposureConfiguration { result in
                     switch result {
                     case let .success(configuration):
@@ -170,7 +137,6 @@ class ExposureManager {
                             }
                             
                             let transmissionRisk = TransmissionRisk(summary: summary!)
-                            
                             finish(.success((transmissionRisk, response.uniqUrlList)))
                         }
                         
@@ -179,9 +145,8 @@ class ExposureManager {
                     }
                 }
             }
-        }) { (error) in
-            
-        }
+        }) { _ in }
+        
         return progress
     }
     

@@ -37,6 +37,12 @@
 		<key>Scheme</key>
 		<string>https</string>
 	</dict>
+	<key>ENAPIVersion</key>
+	<integer>1</integer>
+	<key>ENDeveloperRegion</key>
+	<string>HR</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>InstallationUrl</key>
 	<string>https://apps.apple.com/app/id1519179939</string>
 	<key>LSRequiresIPhoneOS</key>

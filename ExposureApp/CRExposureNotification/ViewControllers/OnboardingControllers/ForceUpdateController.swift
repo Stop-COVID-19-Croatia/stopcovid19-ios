@@ -3,7 +3,6 @@ import UIKit
 class ForceUpdateController: UIViewController {
     
     @IBOutlet weak var ivTopImage: UIImageView!
-    @IBOutlet weak var ivBottomImage: UIImageView!
     
     static func instantiate() -> ForceUpdateController {
         let controller = UIUtil.controllerFromStoryboard(storyboard: .onboarding, controller: .forceUpdateController) as! ForceUpdateController
@@ -18,10 +17,8 @@ class ForceUpdateController: UIViewController {
     private func setup(){
         if Language.getDefaultLanguage().languageType == .english{
             ivTopImage.image = UIImage(named: "Ministvarstvo-logo-EN")
-            ivBottomImage.image = UIImage(named: "develop-by-apis-EN")
         } else {
             ivTopImage.image = UIImage(named: "Ministvarstvo-logo-HR")
-            ivBottomImage.image = UIImage(named: "develop-by-apis-HR")
         }
     }
     

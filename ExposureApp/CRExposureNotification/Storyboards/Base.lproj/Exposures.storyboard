@@ -233,29 +233,19 @@
                                                 <color key="textColor" name="TextBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-ak-ABH">
-                                                <rect key="frame" x="131" y="16" width="152" height="152"/>
-                                                <connections>
-                                                    <segue destination="Bls-qa-bYA" kind="presentation" id="vuJ-Gi-DFg"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="uk0-aD-fQ4" firstAttribute="leading" secondItem="2nX-KX-lci" secondAttribute="leading" constant="32" id="0Bj-Hz-6gI"/>
                                             <constraint firstItem="eNW-F2-6Xb" firstAttribute="top" secondItem="uk0-aD-fQ4" secondAttribute="bottom" constant="16" id="47e-Dk-Xkp"/>
-                                            <constraint firstItem="7HF-ak-ABH" firstAttribute="bottom" secondItem="Jkr-Gu-oPB" secondAttribute="bottom" id="8yD-Sw-peX"/>
                                             <constraint firstItem="MHT-o3-1BP" firstAttribute="top" secondItem="eNW-F2-6Xb" secondAttribute="bottom" constant="16" id="Ima-IS-WAP"/>
                                             <constraint firstItem="Jkr-Gu-oPB" firstAttribute="top" secondItem="2nX-KX-lci" secondAttribute="top" constant="16" id="Lj4-m5-a4S"/>
                                             <constraint firstItem="uk0-aD-fQ4" firstAttribute="top" secondItem="Jkr-Gu-oPB" secondAttribute="bottom" constant="16" id="Ou6-W0-1VS"/>
-                                            <constraint firstItem="7HF-ak-ABH" firstAttribute="top" secondItem="Jkr-Gu-oPB" secondAttribute="top" id="QVO-ga-231"/>
                                             <constraint firstItem="IsI-4Q-90U" firstAttribute="leading" secondItem="2nX-KX-lci" secondAttribute="leading" id="T7x-4C-Dhz"/>
                                             <constraint firstAttribute="trailing" secondItem="IsI-4Q-90U" secondAttribute="trailing" id="TUg-Jo-Gel"/>
                                             <constraint firstItem="MHT-o3-1BP" firstAttribute="leading" secondItem="2nX-KX-lci" secondAttribute="leading" constant="24" id="UKP-XS-SKd"/>
-                                            <constraint firstItem="7HF-ak-ABH" firstAttribute="trailing" secondItem="Jkr-Gu-oPB" secondAttribute="trailing" id="WgK-kK-cRS"/>
                                             <constraint firstItem="eNW-F2-6Xb" firstAttribute="centerX" secondItem="2nX-KX-lci" secondAttribute="centerX" id="d2Z-iE-kiv"/>
                                             <constraint firstItem="IsI-4Q-90U" firstAttribute="top" secondItem="eNW-F2-6Xb" secondAttribute="bottom" id="dgK-ou-hAh"/>
-                                            <constraint firstItem="7HF-ak-ABH" firstAttribute="leading" secondItem="Jkr-Gu-oPB" secondAttribute="leading" id="gwG-Cu-Opq"/>
                                             <constraint firstAttribute="trailing" secondItem="uk0-aD-fQ4" secondAttribute="trailing" constant="32" id="hM2-8b-L5I"/>
                                             <constraint firstAttribute="trailing" secondItem="MHT-o3-1BP" secondAttribute="trailing" constant="24" id="iFg-en-Rjd"/>
                                             <constraint firstAttribute="bottom" secondItem="IsI-4Q-90U" secondAttribute="bottom" id="kkK-Zg-RxK"/>
@@ -289,7 +279,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="EWc-Vf-Eke"/>
                     <connections>
-                        <outlet property="btnDebugInfo" destination="7HF-ak-ABH" id="Xau-AV-hlz"/>
                         <outlet property="exposureDetectionContainer" destination="IsI-4Q-90U" id="uM8-em-QbU"/>
                         <outlet property="exposureInfoContainer" destination="hUw-bW-XlT" id="ZGf-id-2ii"/>
                         <outlet property="ivExposureInfo" destination="cYr-Mk-amt" id="dEe-8z-DTW"/>
@@ -505,61 +494,6 @@
                 <exit id="a3e-aO-Gyt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="277" y="667"/>
-        </scene>
-        <!--Debug Controller-->
-        <scene sceneID="Tfi-Ge-8Ur">
-            <objects>
-                <viewController id="Bls-qa-bYA" customClass="DebugController" customModule="Stop_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aq0-Hl-UHU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUK-ZL-yH4">
-                                <rect key="frame" x="351" y="24" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="close:" destination="Bls-qa-bYA" eventType="touchUpInside" id="JYS-D9-YRa"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H40-Sw-D4G">
-                                <rect key="frame" x="0.0" y="54" width="414" height="754"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edl-r8-cCi">
-                                        <rect key="frame" x="0.0" y="24" width="414" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Edl-r8-cCi" firstAttribute="trailing" secondItem="NB2-v4-Hld" secondAttribute="trailing" id="0k2-c7-69J"/>
-                                    <constraint firstItem="Edl-r8-cCi" firstAttribute="bottom" secondItem="NB2-v4-Hld" secondAttribute="bottom" id="PVX-Gx-nOq"/>
-                                    <constraint firstItem="NB2-v4-Hld" firstAttribute="leading" secondItem="Edl-r8-cCi" secondAttribute="leading" id="XuQ-PQ-gba"/>
-                                    <constraint firstItem="Edl-r8-cCi" firstAttribute="width" secondItem="nQu-XU-ktq" secondAttribute="width" id="lcj-aB-EgM"/>
-                                    <constraint firstItem="Edl-r8-cCi" firstAttribute="top" secondItem="NB2-v4-Hld" secondAttribute="top" constant="24" id="pXB-8q-SGT"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="NB2-v4-Hld"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="nQu-XU-ktq"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="KBP-74-hoE" firstAttribute="trailing" secondItem="H40-Sw-D4G" secondAttribute="trailing" id="0gy-Xd-6ba"/>
-                            <constraint firstItem="wUK-ZL-yH4" firstAttribute="top" secondItem="KBP-74-hoE" secondAttribute="top" constant="24" id="Jl5-rz-g8m"/>
-                            <constraint firstItem="H40-Sw-D4G" firstAttribute="top" secondItem="wUK-ZL-yH4" secondAttribute="bottom" id="Kzc-UU-JIs"/>
-                            <constraint firstItem="KBP-74-hoE" firstAttribute="bottom" secondItem="H40-Sw-D4G" secondAttribute="bottom" id="pwe-5A-RbP"/>
-                            <constraint firstItem="H40-Sw-D4G" firstAttribute="leading" secondItem="KBP-74-hoE" secondAttribute="leading" id="s8i-rY-01E"/>
-                            <constraint firstItem="KBP-74-hoE" firstAttribute="trailing" secondItem="wUK-ZL-yH4" secondAttribute="trailing" constant="24" id="ynC-Tz-OKE"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="KBP-74-hoE"/>
-                    </view>
-                    <connections>
-                        <outlet property="lblInfo" destination="Edl-r8-cCi" id="4xb-4Z-BeJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vyE-6c-8jy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1187" y="362"/>
         </scene>
         <!--Info Controller-->
         <scene sceneID="kjT-8g-cgT">

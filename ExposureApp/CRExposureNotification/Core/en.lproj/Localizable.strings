@@ -46,7 +46,15 @@
 "ExposuresController.ExposureDetectionDescription" = "No contacts.";
 "ExposuresController.OnMessage" = "The application records contacts with other devices in the proximity.";
 "ExposuresController.OffMessage" = "The application does not record contacts with other devices in the proximity.";
-"ExposuresController.BluetoothOff" = "Bluetooth must be enabled for the Exposure api to function properly.";
+"ExposuresController.BluetoothOff" = "Bluetooth must be enabled for Exposure Notifications to function properly.";
+"ExposureController.ENRestricted13.7" = "Please turn on „Share Exposure Information“ and „Set as active region“ on the Stop COVID-19 Settings -> Exposure Notifications screen.";
+"ExposureController.ENRestricted" = "Please turn on „COVID-19 Exposure Notification Logging“ on the Settings -> Privacy -> Health screen";
+"ExposureController.ENAppRestricted13.7" = "By turning off the application you will disable periodical checks of potential infection risk, but the functionality „Exposure  Notifications“ will still be active on your mobile device. You can deactivate it by going to Settings > Exposure  Notifications > Turn Off Exposure Notifications.";
+"ExposureController.ENAppRestricted13.7Label" = "The application is turned off, but the functionality „Exposure  Notifications“ is still  active on your mobile device. This means that your mobile device keeps recording contacts with other devices in proximity. You can deactivate it by going to Settings > Exposure  Notifications > Turn Off Exposure Notifications.";
+"ExposureController.TurnOffEN" = "To turn off Exposure Notifications go to App Settings and disable COVID-19 Exposure Notifications.";
+"ExposureController.TurnOffEN13.7" = "Please turn off „Share Exposure Information“ on the Stop COVID-19 Settings -> Exposure Notifications screen.";
+"ExposureController.TurnOnEN13.7" = "Please turn on „Share Exposure Information“ on the Stop COVID-19 Settings -> Exposure Notifications screen.";
+"ExposureController.Info" = "INFO";
 
 // ExposuresDetailsController
 "ExposuresDetailsController.YouHaveBeenInContact" = "%@ you were in proximity to a person who shared their positive Covid-19 test result.";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m6v-Qq-fiz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m6v-Qq-fiz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -124,11 +124,11 @@
                                     <constraint firstAttribute="height" constant="60" id="TeZ-qD-Mla"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="develop-by-apis-EN" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-S9-sRO">
-                                <rect key="frame" x="262" y="770" width="120" height="60"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apis-image-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-S9-sRO">
+                                <rect key="frame" x="302" y="790" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="PN7-Mx-2cd"/>
-                                    <constraint firstAttribute="height" constant="60" id="i7L-m0-ImD"/>
+                                    <constraint firstAttribute="width" constant="80" id="PN7-Mx-2cd"/>
+                                    <constraint firstAttribute="height" constant="40" id="i7L-m0-ImD"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-app" translatesAutoresizingMaskIntoConstraints="NO" id="n55-YJ-ZcR">
@@ -165,7 +165,6 @@
                         <viewLayoutGuide key="safeArea" id="KNu-dd-2oc"/>
                     </view>
                     <connections>
-                        <outlet property="ivBottomImage" destination="Aei-S9-sRO" id="NR6-cF-jSA"/>
                         <outlet property="ivTopImage" destination="c2s-aH-w8T" id="mVb-GY-Jj0"/>
                     </connections>
                 </viewController>
@@ -617,7 +616,6 @@
         <image name="Ministvarstvo-logo-EN" width="112.5" height="53"/>
         <image name="Ministvarstvo-logo-HR" width="124" height="53"/>
         <image name="apis-image-transparent" width="4870" height="752"/>
-        <image name="develop-by-apis-EN" width="157.5" height="75"/>
         <image name="icon-EN" width="24" height="24"/>
         <image name="icon-HR" width="24" height="24"/>
         <image name="icon-check" width="20" height="20"/>

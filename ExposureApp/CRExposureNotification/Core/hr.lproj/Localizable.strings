@@ -47,6 +47,14 @@
 "ExposuresController.OnMessage" = "Aplikacija bilježi kontakte s drugim uređajima u blizini.";
 "ExposuresController.OffMessage" = "Aplikacija ne bilježi kontakte s drugim uređajima u blizini.";
 "ExposuresController.BluetoothOff" = "Bluetooth mora biti uključen kako bi Vaš mobilni uređaj sigurno mogao prikupljati i dijeliti nasumične ključeve s drugim mobilnim uređajima u blizini.";
+"ExposureController.ENRestricted13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti uključite „Dijeli informacije o izloženosti„ i  „Podesi kao aktivnu regiju“.";
+"ExposureController.ENRestricted" = "Molimo da na ekranu Postavke -> Privatnost -> Zdravlje uključite „Izrada log zapisa o izloženosti bolesti COVID-19“";
+"ExposureController.ENAppRestricted13.7" =  "Isključivanjem aplikacije isključiti ćete povremenu provjeru izloženosti opasnosti od zaraze, ali će funkcionalnost „Obavijesti o izloženosti“ i dalje biti aktivna na vašem mobilnom uređaju. Isključiti je možete na Postavke > Obavijesti o izloženosti > Isključite obavijesti o izloženosti.";
+"ExposureController.ENAppRestricted13.7Label" = "Aplikacija je isključena, ali je funkcionalnost „Obavijesti o izloženosti“ i dalje aktivna na vašem mobilnom uređaju. To znači da mobilni uređaj i dalje bilježi kontakte s drugim uređajima u blizini. Isključiti je možete na Postavke > Obavijesti o izloženosti > Isključi obavijesti o izloženosti.";
+"ExposureController.TurnOffEN" = "Da biste isključili Obavijesti o izloženosti, molimo da na ekranu Postavke Stop COVID-19 onemogućite COVID-19 Obavijesti o izloženosti.";
+"ExposureController.TurnOffEN13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti isključite „Dijeli informacije o izloženosti„.";
+"ExposureController.TurnOnEN13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti uključite „Dijeli informacije o izloženosti„.";
+"ExposureController.Info" = "INFO";
 
 // ExposuresDetailsController
 "ExposuresDetailsController.YouHaveBeenInContact" = "%@ bili ste u blizini osobe koja je prijavila pozitivan test na COVID-19.";

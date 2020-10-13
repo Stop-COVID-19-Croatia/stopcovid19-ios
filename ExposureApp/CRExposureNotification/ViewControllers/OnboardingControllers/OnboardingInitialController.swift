@@ -49,7 +49,7 @@ class OnboardingInitialController: UIViewController {
     }
     
     @IBAction func start(_ sender: UIButton){
-        Storage.save(true, key: StorageKeys.onboardingPassed, override: true)
+        LocalStorage.shared.onboardingPassed = true
         UIUtil.presentMainController()
     }
     

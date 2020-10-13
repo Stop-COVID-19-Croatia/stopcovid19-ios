@@ -9,10 +9,7 @@ class LocalStorage {
     
     @Storable(userDefaultsKey: "exposureDetectionErrorLocalizedDescription", defaultValue: nil)
     var exposureDetectionErrorLocalizedDescription: String?
-    
-    @Storable(userDefaultsKey: "testResults", defaultValue: [:])
-    var testResults: [UUID: TestResult]
-    
+  
     @Storable(userDefaultsKey: "urlCheckedList", defaultValue: [])
     var urlCheckedList: [String]
     
@@ -21,4 +18,7 @@ class LocalStorage {
     
     @Storable(userDefaultsKey: "passedEnableExposure", defaultValue: nil)
     var passedEnableExposure: Bool?
+    
+    @Storable(userDefaultsKey: "onboardingPassed", defaultValue: false)
+    var onboardingPassed: Bool
 }

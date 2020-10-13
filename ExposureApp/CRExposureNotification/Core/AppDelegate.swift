@@ -12,10 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        ExposureManager.shared
         Language.setDefaultLanguage(language: Language.getDefaultLanguage())
         UNUserNotificationCenter.current().delegate = self
-        
+        _ = ExposureManager.shared
         BGTaskScheduler.shared.register(forTaskWithIdentifier: AppDelegate.backgroundTaskIdentifier, using: .main) { task in
             NotificationsManager.shared.showBluetoothOffUserNotificationIfNeeded()
             
@@ -38,22 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationEnum.updateBluetooth.rawValue), object: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            NotificationCenter.default.post(name: .updateBluetooth, object: nil)
         }
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
-        if ENManager.authorizationStatus == .authorized && !ExposureManager.shared.manager.exposureNotificationEnabled {
-            ExposureManager.shared.manager.setExposureNotificationEnabled(true) { (error) in
-                if error == nil {
-                    UIUtil.presentInitialController()
-                }
-            }
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-                NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationEnum.updateBluetooth.rawValue), object: nil)
-            }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            NotificationCenter.default.post(name: .updateBluetooth, object: nil)
         }
     }
     
