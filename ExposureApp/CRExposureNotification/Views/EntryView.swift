@@ -69,12 +69,13 @@ class EntryView: UIView, UITextFieldDelegate {
         stackView.alignment = .center
         stackView.spacing = 8.0
         stackView.accessibilityLabel = label.accessibilityLabel
-        stackView.accessibilityTraits = textFields[0].accessibilityTraits
+        if let firstTextField = textFields.first {
+            stackView.accessibilityTraits = firstTextField.accessibilityTraits
+        }
         stackView.isAccessibilityElement = true
         
-        let textField1 = textFields[0]
-        stackView.activate = {
-            textField1.becomeFirstResponder()
+        stackView.activate = { [weak self] in
+            self?.textFields.first?.becomeFirstResponder()
         }
         self.stackView = stackView
         addSubview(stackView)
