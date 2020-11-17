@@ -94,7 +94,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
         completionHandler()
-        UIUtil.presentMainController()
+        UIUtil.presentInitialController()
     }
 }
 

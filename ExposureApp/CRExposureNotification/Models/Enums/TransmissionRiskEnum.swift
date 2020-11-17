@@ -1,7 +1,5 @@
-import UIKit
-
 enum TransmissionRiskEnum: Int {
-    case lowRisk = 50
+    case lowRisk = 0
     case mediumRisk = 501
     case highRisk = 769
 }

@@ -2,6 +2,9 @@
 /* Class = "UILabel"; text = "/"; ObjectID = "1iP-G2-WXF"; */
 "1iP-G2-WXF.text" = "/";
 
+/* Class = "UILabel"; text = "Exchange of random keys with other European countries"; ObjectID = "1x9-UK-Kdv"; */
+"1x9-UK-Kdv.text" = "Exchange of random keys with other European countries";
+
 /* Class = "UILabel"; text = "When you are near another user of the application, mobile phones exchange keys via Bluetooth. This way, the application can track the contacts made without the ability to identify you or the person you were in contact with."; ObjectID = "2SB-vn-OOq"; */
 "2SB-vn-OOq.text" = "When you are near another user of the application, mobile phones exchange keys via Bluetooth. This way, the application can track the contacts made without the ability to identify you or the person you were in contact with.";
 
@@ -23,14 +26,20 @@
 /* Class = "UILabel"; text = "Each device checks if it has had contact with any of the shared keys"; ObjectID = "EFB-KM-fPm"; */
 "EFB-KM-fPm.text" = "Each device checks if it has had contact with any of the shared keys";
 
-/* Class = "UILabel"; text = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk."; ObjectID = "Liz-bz-pPZ"; */
-"Liz-bz-pPZ.text" = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk.";
+/* Class = "UILabel"; text = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk. Due to the limitations of some manufacturers of mobile devices, if the application is not started occasionally or it is rarely used for a number of days, it is possible that regular daily exposure check is stopped. The application will continue to exchange keys with other devices, but you may not receive exposure notification in timely manner. To prevent this, open the app once a day. Google and Apple are working with mobile device manufacturers to avoid this limitation."; ObjectID = "Liz-bz-pPZ"; */
+"Liz-bz-pPZ.text" = "The app periodically checks the keys on the server and compares them to the keys saved on your device. This allows the app to determine if you have been exposed to a potential infection risk. Due to the limitations of some manufacturers of mobile devices, if the application is not started occasionally or it is rarely used for a number of days, it is possible that regular daily exposure check is stopped. The application will continue to exchange keys with other devices, but you may not receive exposure notification in timely manner. To prevent this, open the app once a day. Google and Apple are working with mobile device manufacturers to avoid this limitation.";
 
 /* Class = "UILabel"; text = "The application does not record contacts with other devices in the proximity."; ObjectID = "MHT-o3-1BP"; */
 "MHT-o3-1BP.text" = "The application does not record contacts with other devices in the proximity.";
 
 /* Class = "UILabel"; text = "Users who test positive can choose if they want to share their random keys"; ObjectID = "MKa-9X-a66"; */
 "MKa-9X-a66.text" = "Users who test positive can choose if they want to share their random keys";
+
+/* Class = "UILabel"; text = "European exchange is off"; ObjectID = "O2o-EL-qss"; */
+"O2o-EL-qss.text" = "European exchange is off";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "PKO-no-GF0"; */
+"PKO-no-GF0.normalTitle" = "Share";
 
 /* Class = "UITabBarItem"; title = "Exposures"; ObjectID = "QTH-QQ-hqW"; */
 "QTH-QQ-hqW.title" = "Exposures";
@@ -40,6 +49,9 @@
 
 /* Class = "UILabel"; text = "Possible exposure"; ObjectID = "VR1-Nc-S0H"; */
 "VR1-Nc-S0H.text" = "Possible exposure";
+
+/* Class = "UIButton"; normalTitle = "Force download"; ObjectID = "ViU-CG-AxV"; */
+"ViU-CG-AxV.normalTitle" = "Force download";
 
 /* Class = "UIButton"; normalTitle = "Done"; ObjectID = "WO4-z0-3xd"; */
 "WO4-z0-3xd.normalTitle" = "Done";
@@ -59,8 +71,8 @@
 /* Class = "UILabel"; text = "Privacy Notice"; ObjectID = "d0v-y6-HZ9"; */
 "d0v-y6-HZ9.text" = "Privacy Notice";
 
-/* Class = "UILabel"; text = "The app assigns a randomly generated keys to each device"; ObjectID = "fkm-Ul-JSi"; */
-"fkm-Ul-JSi.text" = "The app assigns a randomly generated keys to each device";
+/* Class = "UILabel"; text = "The app assigns randomly generated keys to each device"; ObjectID = "fkm-Ul-JSi"; */
+"fkm-Ul-JSi.text" = "The app assigns randomly generated keys to each device";
 
 /* Class = "UILabel"; text = "Find out more:"; ObjectID = "iV3-9W-Ihj"; */
 "iV3-9W-Ihj.text" = "Find out more:";
@@ -74,8 +86,22 @@
 /* Class = "UILabel"; text = "Accessibility Statement"; ObjectID = "muA-fV-0O5"; */
 "muA-fV-0O5.text" = "Accessibility Statement";
 
+/* Class = "UILabel"; text = "TURNED ON"; ObjectID = "pIo-dM-FX7"; */
+"pIo-dM-FX7.text" = "TURNED ON";
+
 /* Class = "UILabel"; text = "If you have been in contact with a user who tested positive and shared their keys, the app will send you notification and instructions what to do next.  The app does not need or use information where or with whom you came into contact."; ObjectID = "pRl-5y-X93"; */
 "pRl-5y-X93.text" = "If you have been in contact with a user who tested positive and shared their keys, the app will send you notification and instructions what to do next.  The app does not need or use information where or with whom you came into contact.";
+
+/* Class = "UILabel"; text = "By giving consent to exchange, random keys of users of other authorized COVID -19 mobile applications in Europe who have shared information about the infection will be processed on your mobile device so that the mobile application can determine if you have been in close contact. Also, in case of infection, your random keys will be sent to the European keys exchange service and processed by authorized COVID-19 mobile applications of other European countries.\n\nActivation of this setting will ensure that you receive exposure notification when travelling abroad or interacting with users of other authorized COVID-19 mobile application."; ObjectID = "sjq-s3-eN9"; */
+"sjq-s3-eN9.text" = "By giving consent to exchange, random keys of users of other authorized COVID -19 mobile applications in Europe who have shared information about the infection will be processed on your mobile device so that the mobile application can determine if you have been in close contact. Also, in case of infection, your random keys will be sent to the European keys exchange service and processed by authorized COVID-19 mobile applications of other European countries.
+
+Activation of this setting will ensure that you receive exposure notification when travelling abroad or interacting with users of other authorized COVID-19 mobile application.";
+
+/* Class = "UILabel"; text = "By giving consent to exchange, random keys of users of other authorized European COVID-19 mobile applications who have shared information about the infection will be processed on your mobile device so that the mobile application can determine if you have been in close contact. Also, in case of infection, your random keys will be sent to the European keys exchange service and processed by authorized COVID-19 mobile applications of other European countries."; ObjectID = "uTu-rU-hdm"; */
+"uTu-rU-hdm.text" = "By giving consent to exchange, random keys of users of other authorized European COVID-19 mobile applications who have shared information about the infection will be processed on your mobile device so that the mobile application can determine if you have been in close contact. Also, in case of infection, your random keys will be sent to the European keys exchange service and processed by authorized COVID-19 mobile applications of other European countries.";
+
+/* Class = "UILabel"; text = "Exchange of random keys with other European countries"; ObjectID = "udN-FZ-KWp"; */
+"udN-FZ-KWp.text" = "Exchange of random keys with other European countries";
 
 /* Class = "UILabel"; text = "Stop COVID-19"; ObjectID = "uk0-aD-fQ4"; */
 "uk0-aD-fQ4.text" = "Stop COVID-19";

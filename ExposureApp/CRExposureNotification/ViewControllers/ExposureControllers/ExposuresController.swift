@@ -6,14 +6,17 @@ class ExposuresController: UIViewController {
     @IBOutlet weak var languageLabel: UILabel!
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var ivStatus: UIImageView!
+    @IBOutlet weak var ivStatus: LottieCustomView!
     
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var statusSwitch: UISwitch!
     
+    @IBOutlet weak var internationalLabel: UILabel!
+    
     @IBOutlet weak var exposureDetectionContainer: UIView!
     @IBOutlet weak var exposureInfoContainer: UIView!
-    @IBOutlet weak var ivExposureInfo: UIImageView!
+    @IBOutlet weak var internationalExchangeContainer: UIView!
+    @IBOutlet weak var ivExposureInfo: LottieCustomView!
     @IBOutlet weak var lblExposureInfo: UILabel!
     @IBOutlet weak var lblNoItem: UILabel!
     @IBOutlet weak var statusContainerView: UIView!
@@ -25,6 +28,16 @@ class ExposuresController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if !(ivStatus.animationView?.isAnimationPlaying ?? false) {
+            ivStatus.animationView?.play()
+        }
+        
+        if !(ivExposureInfo.animationView?.isAnimationPlaying ?? false) {
+            ivExposureInfo.animationView?.play()
+        }
+    }
     private func setup() {
         NotificationCenter.default.addObserver(self, selector: #selector(setupExposureInfo), name: .updateExposureController, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleExposureNotificationStatus), name: .updateBluetooth, object: nil)
@@ -36,20 +49,21 @@ class ExposuresController: UIViewController {
     @objc private func setupExposureInfo() {
         guard let transmissionRisk = LocalStorage.shared.transmissionRisk else {
             lblNoItem.isHidden = false
-            exposureInfoContainer.isHidden = true
+            exposureDetectionContainer.isHidden = true
             return
         }
         
         lblNoItem.isHidden = true
-        exposureInfoContainer.isHidden = false
+        exposureDetectionContainer.isHidden = false
         self.transmisionRisk = transmissionRisk
         lblExposureInfo.text = transmissionRisk.riskTitle
         
         if transmissionRisk.riskType == .highRisk {
-            ivExposureInfo.image = UIImage(named: "icon-risk-high-details")
+            ivExposureInfo.setAnimations(name: "icon-risk-high-details-anim")
         } else {
-            ivExposureInfo.image = UIImage(named: "icon-risk-details")
+            ivExposureInfo.setAnimations(name: "icon-risk-details-anim")
         }
+        updateViewWithAnim()
     }
     
     private func setupLanguage() {
@@ -61,8 +75,10 @@ class ExposuresController: UIViewController {
         switch ExposureManager.shared.manager.exposureNotificationStatus {
         case .active:
             if ENManager.authorizationStatus == .authorized {
+                setInternationalExchange(visibility: true)
                 lblNoItem.text = "ExposuresController.OnMessage".localized()
             } else {
+                setInternationalExchange(visibility: false)
                 if UIDevice.current.systemVersion == "13.7" {
                     lblNoItem.text = "ExposureController.ENAppRestricted13.7Label".localized()
                 } else {
@@ -71,6 +87,7 @@ class ExposuresController: UIViewController {
             }
             
         case .restricted, .unauthorized, .unknown:
+            setInternationalExchange(visibility: false)
             if #available(iOS 13.7, *) {
                 if  ENManager.authorizationStatus == .unknown {
                     lblNoItem.text = "ExposuresController.OffMessage".localized()
@@ -86,9 +103,10 @@ class ExposuresController: UIViewController {
             }
             
         case .bluetoothOff:
+            setInternationalExchange(visibility: true)
             lblNoItem.text = "ExposuresController.BluetoothOff".localized()
-            
         default:
+            setInternationalExchange(visibility: false)
             lblNoItem.text = "ExposuresController.OffMessage".localized()
         }
         
@@ -102,15 +120,25 @@ class ExposuresController: UIViewController {
             statusContainerView.backgroundColor = .primaryGreen
             statusSwitch.setOn(true, animated: true)
             statusLabel.text = "ExposuresController.On".localized()
-            ivStatus.image = UIImage(named: "icon-contacts")
+            ivStatus.setAnimations(name: "icon-contacts-anim")
             statusLabel.textColor = .white
         } else {
             statusContainerView.backgroundColor = .backgroundLightGray
             statusSwitch.setOn(false, animated: true)
             statusLabel.text = "ExposuresController.Off".localized()
-            ivStatus.image = UIImage(named: "icon-nocontacts")
+            ivStatus.setAnimations(name: "icon-nocontacts-anim")
             statusLabel.textColor = .black
         }
+    }
+    
+    private func setInternationalExchange(visibility: Bool) {
+        internationalExchangeContainer.isHidden = !visibility
+        let status = LocalStorage.shared.consentToFederation ? "ExposuresController.InternationalExchangeOn".localized() : "ExposuresController.InternationalExchangeOff".localized()
+        let color = LocalStorage.shared.consentToFederation ? UIColor.primaryGreen : UIColor.primaryRed
+
+        internationalLabel.text = String(format: "ExposuresController.InternationalExchangeFormat".localized(), status)
+        
+        internationalLabel.partTextModifier(fullText: internationalLabel.text ?? Constants.emptyString, changeText: status, color: color, font: UIFont.sfCompactRegularBold(ofSize: 14))
     }
     
     @IBAction func changeLanguage() {
@@ -129,8 +157,8 @@ class ExposuresController: UIViewController {
     
     @IBAction func exposuresSwitch() {
         if ExposureManager.shared.manager.exposureNotificationEnabled &&
-        ExposureManager.shared.manager.exposureNotificationStatus == .active &&
-        ENManager.authorizationStatus == .authorized {
+            ExposureManager.shared.manager.exposureNotificationStatus == .active &&
+            ENManager.authorizationStatus == .authorized {
             if #available(iOS 13.7, *) {
                 UIUtil.showErrorAlert(viewController: self, title: "ExposureController.Info".localized(), message: "ExposureController.TurnOffEN13.7".localized()) {
                     self.openSettings()
@@ -217,5 +245,19 @@ class ExposuresController: UIViewController {
         if let transmisionRisk = transmisionRisk {
             present(ExposuresDetailsController.instantiate(transmisionRisk: transmisionRisk), animated: true, completion: nil)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier,
+            identifier == "otherCountrySegue",
+            let controller = segue.destination as? OtherCountriesConsentController {
+            controller.delegateConsent = self
+        }
+    }
+}
+
+extension ExposuresController: OtherCountriesConsentControllerDelegate {
+    func didChangeConsentToFederation() {
+        setInternationalExchange(visibility: true)
     }
 }

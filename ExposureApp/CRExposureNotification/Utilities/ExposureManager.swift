@@ -79,12 +79,13 @@ class ExposureManager {
                 switch result {
                 case let .success((transmissionRisk, urlCheckedList)):
                     if let transRisk = LocalStorage.shared.transmissionRisk {
-                        if transRisk.maximumRiskScoreFullRange <= transmissionRisk.maximumRiskScoreFullRange && transmissionRisk.maximumRiskScoreFullRange != 0{
+                        if transRisk.maximumRiskScoreFullRange <= transmissionRisk.maximumRiskScoreFullRange &&
+                            transmissionRisk.matchedKeyCount != 0 {
                             LocalStorage.shared.transmissionRisk = transmissionRisk
                             self.scheduleNotification(transmissionRisk: transmissionRisk)
                         }
                     } else {
-                        if LocalStorage.shared.transmissionRisk == nil && transmissionRisk.maximumRiskScoreFullRange != 0 {
+                        if LocalStorage.shared.transmissionRisk == nil && transmissionRisk.matchedKeyCount != 0 {
                             LocalStorage.shared.transmissionRisk = transmissionRisk
                             self.scheduleNotification(transmissionRisk: transmissionRisk)
                         }
@@ -92,7 +93,7 @@ class ExposureManager {
                     
                     LocalStorage.shared.dateLastPerformedExposureDetection = Date()
                     LocalStorage.shared.exposureDetectionErrorLocalizedDescription = nil
-                    LocalStorage.shared.urlCheckedList.append(contentsOf: urlCheckedList)
+                    LocalStorage.shared.urlUniqCheckedList.append(contentsOf: urlCheckedList)
                     NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationEnum.updateExposureController.rawValue), object: nil)
                     success = true
                 case let .failure(error):
@@ -104,16 +105,18 @@ class ExposureManager {
             detectingExposures = false
             completionHandler?(success)
         }
-        
+        var downloadedUrls: [String] = []
         ExposuresProvider.getUrls(success: { (response) in
             let dispatchGroup = DispatchGroup()
             var localURLResults = [Result<[URL], Error>]()
             for i in 0..<response.uniqUrlList.count {
                 dispatchGroup.enter()
                 let remoteUrl = response.uniqUrlList[i]
-                ExposuresProvider.downloadDiagnosisKeyFile(zipName: i.description, at: remoteUrl) { result in
+                ExposuresProvider.downloadDiagnosisKeyFile(zipName: i.description, at: remoteUrl, completion: { (result) in
                     localURLResults.append(result)
                     dispatchGroup.leave()
+                }) { (downloadedUrl) in
+                    downloadedUrls.append(remoteUrl)
                 }
             }
             
@@ -137,7 +140,7 @@ class ExposureManager {
                             }
                             
                             let transmissionRisk = TransmissionRisk(summary: summary!)
-                            finish(.success((transmissionRisk, response.uniqUrlList)))
+                            finish(.success((transmissionRisk, downloadedUrls)))
                         }
                         
                     case let .failure(error):

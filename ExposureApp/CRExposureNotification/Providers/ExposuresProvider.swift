@@ -6,7 +6,7 @@ class ExposuresProvider {
     
     private static let basePath = "/submission"
     static func getUrls(success: @escaping (FileUrlResponse)-> Void, failure: @escaping (CustomError) -> Void) {
-        let finalUrl = Configuration.URLCreator(path: basePath, component: "diagnosis-key-file-urls")
+        let finalUrl = Configuration.URLCreator(path: ("\(basePath)/diagnosis-key-file-urls"), URLQueryItem(name: "all", value: LocalStorage.shared.consentToFederation.description))
         ApiConnector.request(url: finalUrl, method: .get, completion: { (response: FileUrlResponse) in
             success(response)
         }) { (error) in
@@ -22,7 +22,7 @@ class ExposuresProvider {
         }
     }
     
-    static func downloadDiagnosisKeyFile(zipName: String, at remoteURL: String, completion: @escaping (Swift.Result<[URL], Error>) -> Void) {
+    static func downloadDiagnosisKeyFile(zipName: String, at remoteURL: String, completion: @escaping (Swift.Result<[URL], Error>) -> Void, downloadedUrl: @escaping (String) -> Void) {
         ApiConnector.requestData(url: remoteURL, method: .get, completion: { (response) in
             guard let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {
                 return
@@ -45,12 +45,14 @@ class ExposuresProvider {
                 destinationLocalUnZipBinURL = destinationLocalUnZipBinURL.appendingPathComponent("export\(zipName).bin")
                 destinationLocalUnZipSigURL = destinationLocalUnZipSigURL.appendingPathComponent("export\(zipName).sig")
                 
+                try? FileManager.default.removeItem(at: destinationLocalUnZipBinURL)
                 try FileManager.default.moveItem(at: originalLocalUnZipBinURL, to: destinationLocalUnZipBinURL)
+                try? FileManager.default.removeItem(at: destinationLocalUnZipSigURL)
                 try FileManager.default.moveItem(at: originalLocalUnZipSigURL, to: destinationLocalUnZipSigURL)
          
                 completion(.success([destinationLocalUnZipBinURL,destinationLocalUnZipSigURL]))
+                downloadedUrl(remoteURL)
             } catch {
-                print(error.localizedDescription)
                 do {
                     try ExposuresProvider.deleteDiagnosisKeyFile(at: [destinationLocalUnZipBinURL,destinationLocalUnZipSigURL])
                 } catch {
@@ -69,5 +71,4 @@ class ExposuresProvider {
             try FileManager.default.removeItem(at: localURL)
         }
     }
-    
 }

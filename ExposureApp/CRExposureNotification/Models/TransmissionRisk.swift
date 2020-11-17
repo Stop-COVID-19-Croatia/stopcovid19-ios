@@ -6,8 +6,10 @@ struct TransmissionRisk: Codable {
     var riskType: TransmissionRiskEnum = .lowRisk
     var daysSinceLastExposure: Int?
     var maximumRiskScoreFullRange: Int = 0
+    var matchedKeyCount: UInt64 = 0
     
     init(summary: ENExposureDetectionSummary) {
+        matchedKeyCount = summary.matchedKeyCount
         daysSinceLastExposure =  summary.daysSinceLastExposure
         if let result = summary.metadata?["maximumRiskScoreFullRange"] as? Int {
             maximumRiskScoreFullRange = result

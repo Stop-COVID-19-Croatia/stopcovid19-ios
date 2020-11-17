@@ -19,7 +19,6 @@
 		0471F12624AB281F0028FD01 /* ForceUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471F12524AB281F0028FD01 /* ForceUpdateController.swift */; };
 		0471F12A24AB2D390028FD01 /* UpdateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471F12924AB2D390028FD01 /* UpdateWrapper.swift */; };
 		0471F12C24AB2D4E0028FD01 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471F12B24AB2D4E0028FD01 /* Update.swift */; };
-		0471F12E24AB8D630028FD01 /* DebugController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471F12D24AB8D630028FD01 /* DebugController.swift */; };
 		04895F3524A1E566002D3B51 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04895F3424A1E566002D3B51 /* InfoController.swift */; };
 		0491DBD624A5EC56009748AB /* FileUrlResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491DBD524A5EC56009748AB /* FileUrlResponse.swift */; };
 		049A1BF7248F6582008D383B /* StoryboardNameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1BF5248F6582008D383B /* StoryboardNameEnum.swift */; };
@@ -87,6 +86,24 @@
 		1AD950A1248E2F280023C9E2 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD950A0248E2F280023C9E2 /* NSObject.swift */; };
 		1AD950A3248E31F90023C9E2 /* ShadowViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD950A2248E31F80023C9E2 /* ShadowViewContainer.swift */; };
 		1AD950A5248E39350023C9E2 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD950A4248E39350023C9E2 /* Icons.xcassets */; };
+		4FE926F234A1D3315256DDFE /* libPods-CRExposureNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */; };
+		EF01FEC6254C2FD600C61F75 /* NSTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01FEC5254C2FD600C61F75 /* NSTextAlignment.swift */; };
+		EF01FF17254C328000C61F75 /* icon-mask-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0A254C328000C61F75 /* icon-mask-anim.json */; };
+		EF01FF18254C328000C61F75 /* icon-risk-details-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0B254C328000C61F75 /* icon-risk-details-anim.json */; };
+		EF01FF19254C328000C61F75 /* icon-contacts-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0C254C328000C61F75 /* icon-contacts-anim.json */; };
+		EF01FF1A254C328000C61F75 /* icon-security-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0D254C328000C61F75 /* icon-security-anim.json */; };
+		EF01FF1B254C328000C61F75 /* icon-shield-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0E254C328000C61F75 /* icon-shield-anim.json */; };
+		EF01FF1C254C328000C61F75 /* icon-step-1-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0F254C328000C61F75 /* icon-step-1-anim.json */; };
+		EF01FF1D254C328000C61F75 /* icon-step-2-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF10254C328000C61F75 /* icon-step-2-anim.json */; };
+		EF01FF1E254C328000C61F75 /* icon-nocontacts-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF11254C328000C61F75 /* icon-nocontacts-anim.json */; };
+		EF01FF1F254C328000C61F75 /* icon-step-4-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF12254C328000C61F75 /* icon-step-4-anim.json */; };
+		EF01FF20254C328000C61F75 /* icon-bluetooth-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF13254C328000C61F75 /* icon-bluetooth-anim.json */; };
+		EF01FF21254C328000C61F75 /* icon-step-3-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF14254C328000C61F75 /* icon-step-3-anim.json */; };
+		EF01FF22254C328000C61F75 /* icon-risk-high-details-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF15254C328000C61F75 /* icon-risk-high-details-anim.json */; };
+		EF01FF23254C328000C61F75 /* icon-step-5-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF16254C328000C61F75 /* icon-step-5-anim.json */; };
+		EF6DDD4E254C33F1009021A9 /* LottieCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DDD4D254C33F1009021A9 /* LottieCustomView.swift */; };
+		EF6DDD52254C3437009021A9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DDD51254C3437009021A9 /* Array.swift */; };
+		EFAE6C03254C2085005ABE9C /* OtherCountriesConsentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE6C02254C2085005ABE9C /* OtherCountriesConsentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,7 +123,6 @@
 		0471F12824AB2A960028FD01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		0471F12924AB2D390028FD01 /* UpdateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWrapper.swift; sourceTree = "<group>"; };
 		0471F12B24AB2D4E0028FD01 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
-		0471F12D24AB8D630028FD01 /* DebugController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugController.swift; sourceTree = "<group>"; };
 		04895F3424A1E566002D3B51 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		0491DBD524A5EC56009748AB /* FileUrlResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUrlResponse.swift; sourceTree = "<group>"; };
 		049A1BF5248F6582008D383B /* StoryboardNameEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardNameEnum.swift; sourceTree = "<group>"; };
@@ -184,6 +200,26 @@
 		1AD950A0248E2F280023C9E2 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		1AD950A2248E31F80023C9E2 /* ShadowViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewContainer.swift; sourceTree = "<group>"; };
 		1AD950A4248E39350023C9E2 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.debug.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRExposureNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.release.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.release.xcconfig"; sourceTree = "<group>"; };
+		EF01FEC5254C2FD600C61F75 /* NSTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextAlignment.swift; sourceTree = "<group>"; };
+		EF01FF0A254C328000C61F75 /* icon-mask-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-mask-anim.json"; sourceTree = "<group>"; };
+		EF01FF0B254C328000C61F75 /* icon-risk-details-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-risk-details-anim.json"; sourceTree = "<group>"; };
+		EF01FF0C254C328000C61F75 /* icon-contacts-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-contacts-anim.json"; sourceTree = "<group>"; };
+		EF01FF0D254C328000C61F75 /* icon-security-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-security-anim.json"; sourceTree = "<group>"; };
+		EF01FF0E254C328000C61F75 /* icon-shield-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-shield-anim.json"; sourceTree = "<group>"; };
+		EF01FF0F254C328000C61F75 /* icon-step-1-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-1-anim.json"; sourceTree = "<group>"; };
+		EF01FF10254C328000C61F75 /* icon-step-2-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-2-anim.json"; sourceTree = "<group>"; };
+		EF01FF11254C328000C61F75 /* icon-nocontacts-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-nocontacts-anim.json"; sourceTree = "<group>"; };
+		EF01FF12254C328000C61F75 /* icon-step-4-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-4-anim.json"; sourceTree = "<group>"; };
+		EF01FF13254C328000C61F75 /* icon-bluetooth-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-bluetooth-anim.json"; sourceTree = "<group>"; };
+		EF01FF14254C328000C61F75 /* icon-step-3-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-3-anim.json"; sourceTree = "<group>"; };
+		EF01FF15254C328000C61F75 /* icon-risk-high-details-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-risk-high-details-anim.json"; sourceTree = "<group>"; };
+		EF01FF16254C328000C61F75 /* icon-step-5-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-5-anim.json"; sourceTree = "<group>"; };
+		EF6DDD4D254C33F1009021A9 /* LottieCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCustomView.swift; sourceTree = "<group>"; };
+		EF6DDD51254C3437009021A9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		EFAE6C02254C2085005ABE9C /* OtherCountriesConsentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCountriesConsentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE926F234A1D3315256DDFE /* libPods-CRExposureNotification.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +345,7 @@
 		1A1D34A0249A593700C0325E /* ExposureControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFAE6C02254C2085005ABE9C /* OtherCountriesConsentController.swift */,
 				049A1BFC248F68A4008D383B /* ExposuresController.swift */,
 				049A1C0B248F8834008D383B /* ExposuresDetailsController.swift */,
 				04895F3424A1E566002D3B51 /* InfoController.swift */,
@@ -371,6 +409,7 @@
 				1AD950A2248E31F80023C9E2 /* ShadowViewContainer.swift */,
 				1A98CE5E247FB7BA0099BD76 /* TableViewCells */,
 				1AD9509B248E2E870023C9E2 /* LanguageButton */,
+				EF6DDD4D254C33F1009021A9 /* LottieCustomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +454,7 @@
 				1AD80B8F247E7A7D00F72046 /* CRExposureNotification */,
 				1AD80B8E247E7A7D00F72046 /* Products */,
 				D04CFE7465A45763720FEFCD /* Pods */,
+				3138922B5F24BFF20D7C19DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -472,6 +512,7 @@
 		1AD80BA8247E845300F72046 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EF01FF09254C328000C61F75 /* AnimationFiles */,
 				1A4C3051248E294D00E012AA /* Fonts */,
 				04B37C9124924DF000DACAE6 /* ExposureNotificationApp.entitlements */,
 				1AD80B90247E7A7D00F72046 /* AppDelegate.swift */,
@@ -491,7 +532,6 @@
 				04DF607D24A636B700CA80E8 /* InitialController.swift */,
 				04DF607F24A6409900CA80E8 /* PrivacyController.swift */,
 				0471F12524AB281F0028FD01 /* ForceUpdateController.swift */,
-				0471F12D24AB8D630028FD01 /* DebugController.swift */,
 			);
 			path = OnboardingControllers;
 			sourceTree = "<group>";
@@ -508,6 +548,8 @@
 				049A1BFE248F6B62008D383B /* UIFont.swift */,
 				049A1C0D248FADF1008D383B /* String.swift */,
 				049A1C11248FB1DA008D383B /* UILabel.swift */,
+				EF01FEC5254C2FD600C61F75 /* NSTextAlignment.swift */,
+				EF6DDD51254C3437009021A9 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -521,11 +563,41 @@
 			path = LanguageButton;
 			sourceTree = "<group>";
 		};
+		3138922B5F24BFF20D7C19DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D04CFE7465A45763720FEFCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */,
+				D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF01FF09254C328000C61F75 /* AnimationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FF0A254C328000C61F75 /* icon-mask-anim.json */,
+				EF01FF0B254C328000C61F75 /* icon-risk-details-anim.json */,
+				EF01FF0C254C328000C61F75 /* icon-contacts-anim.json */,
+				EF01FF0D254C328000C61F75 /* icon-security-anim.json */,
+				EF01FF0E254C328000C61F75 /* icon-shield-anim.json */,
+				EF01FF0F254C328000C61F75 /* icon-step-1-anim.json */,
+				EF01FF10254C328000C61F75 /* icon-step-2-anim.json */,
+				EF01FF11254C328000C61F75 /* icon-nocontacts-anim.json */,
+				EF01FF12254C328000C61F75 /* icon-step-4-anim.json */,
+				EF01FF13254C328000C61F75 /* icon-bluetooth-anim.json */,
+				EF01FF14254C328000C61F75 /* icon-step-3-anim.json */,
+				EF01FF15254C328000C61F75 /* icon-risk-high-details-anim.json */,
+				EF01FF16254C328000C61F75 /* icon-step-5-anim.json */,
+			);
+			path = AnimationFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,6 +607,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD80BA1247E7A8000F72046 /* Build configuration list for PBXNativeTarget "CRExposureNotification" */;
 			buildPhases = (
+				07F2B99313FC8903B196D16C /* [CP] Check Pods Manifest.lock */,
 				1AD80B89247E7A7D00F72046 /* Sources */,
 				1AD80B8A247E7A7D00F72046 /* Frameworks */,
 				1AD80B8B247E7A7D00F72046 /* Resources */,
@@ -590,27 +663,65 @@
 			files = (
 				1A4C3046248E215E00E012AA /* Colors.xcassets in Resources */,
 				049A1C06248F6BA3008D383B /* ExposuresCell.xib in Resources */,
+				EF01FF1E254C328000C61F75 /* icon-nocontacts-anim.json in Resources */,
+				EF01FF23254C328000C61F75 /* icon-step-5-anim.json in Resources */,
+				EF01FF1A254C328000C61F75 /* icon-security-anim.json in Resources */,
 				1A4C3057248E294D00E012AA /* Roboto-Regular.ttf in Resources */,
 				1A4C3058248E294D00E012AA /* Roboto-Bold.ttf in Resources */,
 				1AD9509D248E2EAE0023C9E2 /* LanguageButton.xib in Resources */,
+				EF01FF1B254C328000C61F75 /* icon-shield-anim.json in Resources */,
 				04EFF821249785AD001DD589 /* Main.storyboard in Resources */,
 				1AD950A5248E39350023C9E2 /* Icons.xcassets in Resources */,
 				04A06D6B24A0C3FA00182942 /* Loader.xib in Resources */,
 				1A59788F248F899700E9ABA3 /* InputField.xib in Resources */,
 				04EFF823249785B7001DD589 /* LaunchScreen.storyboard in Resources */,
+				EF01FF22254C328000C61F75 /* icon-risk-high-details-anim.json in Resources */,
 				1A1F3E30249CDE0600A3D021 /* PositiveTestCell.xib in Resources */,
 				04EFF82E2497A573001DD589 /* Helpers.storyboard in Resources */,
+				EF01FF1C254C328000C61F75 /* icon-step-1-anim.json in Resources */,
+				EF01FF19254C328000C61F75 /* icon-contacts-anim.json in Resources */,
+				EF01FF21254C328000C61F75 /* icon-step-3-anim.json in Resources */,
 				1A1D34A1249A5A4000C0325E /* Exposures.storyboard in Resources */,
 				1A4C3059248E294D00E012AA /* SFCompactText-Regular.otf in Resources */,
+				EF01FF18254C328000C61F75 /* icon-risk-details-anim.json in Resources */,
 				1A4C3056248E294D00E012AA /* SFCompactDisplay-Semibold.otf in Resources */,
+				EF01FF17254C328000C61F75 /* icon-mask-anim.json in Resources */,
+				EF01FF20254C328000C61F75 /* icon-bluetooth-anim.json in Resources */,
 				1AD80B9A247E7A8000F72046 /* Images.xcassets in Resources */,
 				04EFF826249787CD001DD589 /* Onboarding.storyboard in Resources */,
 				04EFF8122497823C001DD589 /* Localizable.strings in Resources */,
+				EF01FF1D254C328000C61F75 /* icon-step-2-anim.json in Resources */,
+				EF01FF1F254C328000C61F75 /* icon-step-4-anim.json in Resources */,
 				04EFF8352497A6CC001DD589 /* Notify.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07F2B99313FC8903B196D16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRExposureNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AD80B89247E7A7D00F72046 /* Sources */ = {
@@ -629,6 +740,7 @@
 				046D9C532490F13E00D54250 /* DiagnosisKeyInput.swift in Sources */,
 				043B4CC724A8ADA800ED774A /* TransmissionRisk.swift in Sources */,
 				049A1BFF248F6B63008D383B /* UIFont.swift in Sources */,
+				EFAE6C03254C2085005ABE9C /* OtherCountriesConsentController.swift in Sources */,
 				1A98CE74247FF53D0099BD76 /* StorageKeys.swift in Sources */,
 				1A597898248FB0EF00E9ABA3 /* Date.swift in Sources */,
 				046D9C492490ECE700D54250 /* CustomError.swift in Sources */,
@@ -636,6 +748,7 @@
 				1AD950A1248E2F280023C9E2 /* NSObject.swift in Sources */,
 				046D9C502490F09400D54250 /* ExposuresProvider.swift in Sources */,
 				1AD80B91247E7A7D00F72046 /* AppDelegate.swift in Sources */,
+				EF01FEC6254C2FD600C61F75 /* NSTextAlignment.swift in Sources */,
 				1A59788D248F898C00E9ABA3 /* InputField.swift in Sources */,
 				1A4C3048248E248000E012AA /* UIColor.swift in Sources */,
 				04A42664249393E400FAAE9A /* NSBundle+Language.m in Sources */,
@@ -648,11 +761,11 @@
 				04895F3524A1E566002D3B51 /* InfoController.swift in Sources */,
 				1A98CE5D247FABF80099BD76 /* EntryView.swift in Sources */,
 				1A8D356A2498DA3A0005D2BE /* Exposure.swift in Sources */,
-				0471F12E24AB8D630028FD01 /* DebugController.swift in Sources */,
 				1A98CE6B247FDD570099BD76 /* ExposureManager.swift in Sources */,
 				1A59789C248FB85800E9ABA3 /* PositiveTestCell.swift in Sources */,
 				1A8D35682498D8D50005D2BE /* NotificationsManager.swift in Sources */,
 				1AD80BAA247E849500F72046 /* OnboardingInitialController.swift in Sources */,
+				EF6DDD52254C3437009021A9 /* Array.swift in Sources */,
 				04A426662493980100FAAE9A /* Language.swift in Sources */,
 				1A59788A248F86CA00E9ABA3 /* NotifyInitialController.swift in Sources */,
 				1A7587C4249A015400FE221D /* LocalStorage.swift in Sources */,
@@ -671,6 +784,7 @@
 				0471F12C24AB2D4E0028FD01 /* Update.swift in Sources */,
 				049A1BFA248F65DC008D383B /* UIUtil.swift in Sources */,
 				0471F12624AB281F0028FD01 /* ForceUpdateController.swift in Sources */,
+				EF6DDD4E254C33F1009021A9 /* LottieCustomView.swift in Sources */,
 				0471F12A24AB2D390028FD01 /* UpdateWrapper.swift in Sources */,
 				0404F17424ADE79D00C93A8C /* NotificationEnum.swift in Sources */,
 				04DF607E24A636B700CA80E8 /* InitialController.swift in Sources */,
@@ -864,6 +978,7 @@
 		};
 		1AD80BA2247E7A8000F72046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -872,7 +987,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -881,7 +996,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";
@@ -894,6 +1009,7 @@
 		};
 		1AD80BA3247E7A8000F72046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -902,7 +1018,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 15;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -911,7 +1027,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";

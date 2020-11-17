@@ -117,7 +117,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-shape" translatesAutoresizingMaskIntoConstraints="NO" id="AeY-rm-H0z">
                                 <rect key="frame" x="0.0" y="550" width="414" height="346"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ministvarstvo-logo-EN" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-aH-w8T">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ministvarstvo-logo-HR" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-aH-w8T">
                                 <rect key="frame" x="32" y="76" width="120" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="9Vu-ac-l1m"/>
@@ -125,7 +125,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apis-image-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-S9-sRO">
-                                <rect key="frame" x="302" y="790" width="80" height="40"/>
+                                <rect key="frame" x="318" y="806" width="80" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="PN7-Mx-2cd"/>
                                     <constraint firstAttribute="height" constant="40" id="i7L-m0-ImD"/>
@@ -144,11 +144,11 @@
                             <constraint firstItem="AeY-rm-H0z" firstAttribute="trailing" secondItem="KNu-dd-2oc" secondAttribute="trailing" id="0Nq-eL-QEG"/>
                             <constraint firstItem="VBN-iA-uu0" firstAttribute="top" secondItem="n55-YJ-ZcR" secondAttribute="bottom" constant="8" id="3KN-mt-WCD"/>
                             <constraint firstItem="VBN-iA-uu0" firstAttribute="centerX" secondItem="9VH-de-Gtc" secondAttribute="centerX" id="GiY-bs-8r2"/>
-                            <constraint firstItem="KNu-dd-2oc" firstAttribute="trailing" secondItem="Aei-S9-sRO" secondAttribute="trailing" constant="32" id="MEJ-IV-whR"/>
+                            <constraint firstItem="KNu-dd-2oc" firstAttribute="trailing" secondItem="Aei-S9-sRO" secondAttribute="trailing" constant="16" id="MEJ-IV-whR"/>
                             <constraint firstItem="c2s-aH-w8T" firstAttribute="top" secondItem="KNu-dd-2oc" secondAttribute="top" constant="32" id="MTi-Vb-mHl"/>
                             <constraint firstItem="KNu-dd-2oc" firstAttribute="trailing" secondItem="QkY-iX-DFw" secondAttribute="trailing" constant="32" id="T3p-CJ-Btc"/>
                             <constraint firstItem="QkY-iX-DFw" firstAttribute="centerX" secondItem="9VH-de-Gtc" secondAttribute="centerX" id="c0a-yE-FRi"/>
-                            <constraint firstItem="KNu-dd-2oc" firstAttribute="bottom" secondItem="Aei-S9-sRO" secondAttribute="bottom" constant="32" id="fde-tD-IIt"/>
+                            <constraint firstItem="KNu-dd-2oc" firstAttribute="bottom" secondItem="Aei-S9-sRO" secondAttribute="bottom" constant="16" id="fde-tD-IIt"/>
                             <constraint firstItem="c2s-aH-w8T" firstAttribute="leading" secondItem="KNu-dd-2oc" secondAttribute="leading" constant="32" id="gRF-Cm-ZjO"/>
                             <constraint firstItem="AeY-rm-H0z" firstAttribute="top" secondItem="3gp-CK-OZp" secondAttribute="bottom" id="hUz-vi-jDZ"/>
                             <constraint firstItem="3gp-CK-OZp" firstAttribute="leading" secondItem="KNu-dd-2oc" secondAttribute="leading" constant="88" id="iox-7m-Zlg"/>
@@ -372,19 +372,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNJ-g6-CFO">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-zh-7mv">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-zh-7mv">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-XK-lco">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="598.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="663.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-security" translatesAutoresizingMaskIntoConstraints="NO" id="3Oy-Sp-TwJ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgd-Id-bug" customClass="LottieCustomView" customModule="Stop_COVID_19" customModuleProvider="target">
                                                         <rect key="frame" x="107" y="16" width="200" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="200" id="0hg-MW-KY7"/>
-                                                            <constraint firstAttribute="height" constant="100" id="L2V-IF-hlz"/>
+                                                            <constraint firstAttribute="width" constant="200" id="3L7-z8-lYP"/>
+                                                            <constraint firstAttribute="height" constant="100" id="U2O-VG-ePj"/>
                                                         </constraints>
-                                                    </imageView>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="lottieName" value="icon-security-anim"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your privacy is safe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7r-lJ-NIo">
                                                         <rect key="frame" x="120.5" y="148" width="173" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="20"/>
@@ -401,7 +405,7 @@
                                                                     <constraint firstAttribute="width" constant="24" id="vdl-C4-odP"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app does not collect your personal data, like your name, surname, date of birth, address, telephone number etc." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYI-bW-M4A">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The application does not collect your personal data, like your name, surname, date of birth, address, telephone number etc." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYI-bW-M4A">
                                                                 <rect key="frame" x="56" y="16" width="342" height="49"/>
                                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="14"/>
                                                                 <nil key="textColor"/>
@@ -428,7 +432,7 @@
                                                                     <constraint firstAttribute="height" constant="24" id="cAE-71-cgE"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app cannot identify you or the people you have been in contact with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3r-ql-zgP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The application cannot identify you or the people you have been in contact with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3r-ql-zgP">
                                                                 <rect key="frame" x="56" y="16" width="342" height="33"/>
                                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="14"/>
                                                                 <nil key="textColor"/>
@@ -500,7 +504,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-2o-3mY">
-                                                        <rect key="frame" x="0.0" y="431.5" width="414" height="53"/>
+                                                        <rect key="frame" x="0.0" y="431.5" width="414" height="118"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-check" translatesAutoresizingMaskIntoConstraints="NO" id="1jo-I7-efR">
                                                                 <rect key="frame" x="16" y="16" width="24" height="24"/>
@@ -509,8 +513,9 @@
                                                                     <constraint firstAttribute="width" constant="24" id="3On-hv-z4e"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your data are saved on the servers in the Republic of Croatia and are controlled by the Ministry of Health." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROu-hg-dys">
-                                                                <rect key="frame" x="56" y="16" width="342" height="33"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROu-hg-dys">
+                                                                <rect key="frame" x="56" y="16" width="342" height="98"/>
+                                                                <string key="text">In case of infection and with your consent, your keys will be temporarily stored on a server in the Republic of Croatia managed by the Ministry of Health. If you consent to exchange of keys with other European countries, your keys will be temporarily stored on their servers.</string>
                                                                 <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -527,7 +532,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKJ-qa-KHo">
-                                                        <rect key="frame" x="88" y="516.5" width="238" height="50"/>
+                                                        <rect key="frame" x="88" y="581.5" width="238" height="50"/>
                                                         <color key="backgroundColor" name="PrimaryGreen"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="YKO-oP-Cnf"/>
@@ -548,7 +553,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="3Oy-Sp-TwJ" firstAttribute="centerX" secondItem="aZc-XK-lco" secondAttribute="centerX" id="1xO-ad-DDy"/>
                                                     <constraint firstItem="CRc-0q-xXf" firstAttribute="top" secondItem="W7r-lJ-NIo" secondAttribute="bottom" constant="16" id="7mc-LK-nkx"/>
                                                     <constraint firstItem="VKJ-qa-KHo" firstAttribute="top" secondItem="YSm-2o-3mY" secondAttribute="bottom" constant="32" id="8Xb-51-5uG"/>
                                                     <constraint firstItem="Hsd-N7-XRg" firstAttribute="leading" secondItem="aZc-XK-lco" secondAttribute="leading" id="CSZ-2F-y1c"/>
@@ -560,15 +564,16 @@
                                                     <constraint firstItem="CRc-0q-xXf" firstAttribute="leading" secondItem="aZc-XK-lco" secondAttribute="leading" id="KDB-p6-AhM"/>
                                                     <constraint firstItem="phs-Mi-1j8" firstAttribute="leading" secondItem="aZc-XK-lco" secondAttribute="leading" id="Mi2-Xv-x8M"/>
                                                     <constraint firstAttribute="trailing" secondItem="YSm-2o-3mY" secondAttribute="trailing" id="QEy-H5-Ils"/>
+                                                    <constraint firstItem="Hgd-Id-bug" firstAttribute="top" secondItem="aZc-XK-lco" secondAttribute="top" constant="16" id="RgS-Ik-oJv"/>
+                                                    <constraint firstItem="Hgd-Id-bug" firstAttribute="centerX" secondItem="aZc-XK-lco" secondAttribute="centerX" id="Tdb-ae-970"/>
+                                                    <constraint firstItem="W7r-lJ-NIo" firstAttribute="top" secondItem="Hgd-Id-bug" secondAttribute="bottom" constant="32" id="ZXh-7O-KRH"/>
                                                     <constraint firstItem="W7r-lJ-NIo" firstAttribute="centerX" secondItem="aZc-XK-lco" secondAttribute="centerX" id="ac3-jK-ByQ"/>
                                                     <constraint firstItem="YSm-2o-3mY" firstAttribute="leading" secondItem="aZc-XK-lco" secondAttribute="leading" id="eTA-N8-Vdb"/>
                                                     <constraint firstItem="phs-Mi-1j8" firstAttribute="top" secondItem="CRc-0q-xXf" secondAttribute="bottom" constant="4" id="f4i-8H-YIe"/>
                                                     <constraint firstItem="Hsd-N7-XRg" firstAttribute="top" secondItem="91x-xl-prw" secondAttribute="bottom" constant="4" id="feY-B9-UrK"/>
                                                     <constraint firstItem="91x-xl-prw" firstAttribute="leading" secondItem="aZc-XK-lco" secondAttribute="leading" id="gKz-aN-hVc"/>
                                                     <constraint firstAttribute="trailing" secondItem="VKJ-qa-KHo" secondAttribute="trailing" constant="88" id="jYv-mf-Dpg"/>
-                                                    <constraint firstItem="3Oy-Sp-TwJ" firstAttribute="top" secondItem="aZc-XK-lco" secondAttribute="top" constant="16" id="jf4-nZ-Wb4"/>
                                                     <constraint firstAttribute="trailing" secondItem="Hsd-N7-XRg" secondAttribute="trailing" id="lvA-do-6XS"/>
-                                                    <constraint firstItem="W7r-lJ-NIo" firstAttribute="top" secondItem="3Oy-Sp-TwJ" secondAttribute="bottom" constant="32" id="pKZ-K6-91m"/>
                                                     <constraint firstAttribute="bottom" secondItem="VKJ-qa-KHo" secondAttribute="bottom" constant="32" id="xcc-fD-YgN"/>
                                                     <constraint firstItem="YSm-2o-3mY" firstAttribute="top" secondItem="Hsd-N7-XRg" secondAttribute="bottom" constant="4" id="yCV-ao-LIc"/>
                                                 </constraints>
@@ -619,7 +624,6 @@
         <image name="icon-EN" width="24" height="24"/>
         <image name="icon-HR" width="24" height="24"/>
         <image name="icon-check" width="20" height="20"/>
-        <image name="icon-security" width="226" height="226"/>
         <image name="image-app" width="120" height="120"/>
         <namedColor name="PrimaryGreen">
             <color red="0.011764705882352941" green="0.74117647058823533" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

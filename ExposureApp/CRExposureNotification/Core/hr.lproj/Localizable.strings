@@ -47,7 +47,7 @@
 "ExposuresController.OnMessage" = "Aplikacija bilježi kontakte s drugim uređajima u blizini.";
 "ExposuresController.OffMessage" = "Aplikacija ne bilježi kontakte s drugim uređajima u blizini.";
 "ExposuresController.BluetoothOff" = "Bluetooth mora biti uključen kako bi Vaš mobilni uređaj sigurno mogao prikupljati i dijeliti nasumične ključeve s drugim mobilnim uređajima u blizini.";
-"ExposureController.ENRestricted13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti uključite „Dijeli informacije o izloženosti„ i  „Podesi kao aktivnu regiju“.";
+"ExposureController.ENRestricted13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti uključite „Dijeli informacije o izloženosti„ i „Podesi kao aktivnu regiju“.";
 "ExposureController.ENRestricted" = "Molimo da na ekranu Postavke -> Privatnost -> Zdravlje uključite „Izrada log zapisa o izloženosti bolesti COVID-19“";
 "ExposureController.ENAppRestricted13.7" =  "Isključivanjem aplikacije isključiti ćete povremenu provjeru izloženosti opasnosti od zaraze, ali će funkcionalnost „Obavijesti o izloženosti“ i dalje biti aktivna na vašem mobilnom uređaju. Isključiti je možete na Postavke > Obavijesti o izloženosti > Isključite obavijesti o izloženosti.";
 "ExposureController.ENAppRestricted13.7Label" = "Aplikacija je isključena, ali je funkcionalnost „Obavijesti o izloženosti“ i dalje aktivna na vašem mobilnom uređaju. To znači da mobilni uređaj i dalje bilježi kontakte s drugim uređajima u blizini. Isključiti je možete na Postavke > Obavijesti o izloženosti > Isključi obavijesti o izloženosti.";
@@ -55,6 +55,9 @@
 "ExposureController.TurnOffEN13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti isključite „Dijeli informacije o izloženosti„.";
 "ExposureController.TurnOnEN13.7" = "Molimo da na ekranu Postavke Stop COVID-19 -> Obavijesti o izloženosti uključite „Dijeli informacije o izloženosti„.";
 "ExposureController.Info" = "INFO";
+"ExposuresController.InternationalExchangeFormat" = "Europska razmjena je %@";
+"ExposuresController.InternationalExchangeOn" = "Uključena";
+"ExposuresController.InternationalExchangeOff" = "Isključena";
 
 // ExposuresDetailsController
 "ExposuresDetailsController.YouHaveBeenInContact" = "%@ bili ste u blizini osobe koja je prijavila pozitivan test na COVID-19.";
@@ -100,3 +103,11 @@
 
 //ExposureManager
 "ExposureManager.Message" = "Bili ste u kontaktu sa zaraženom osobom. Molimo Vas da slijedite daljnje upute.";
+
+// MARK: OtherCountriesConsentController
+"OtherCountriesConsentController.PopupTitle" = "Prihvati razmjenu nasumičnih ključeva s drugim europskim državama";
+"OtherCountriesConsentController.PopupMessage" = "Prihvaćanjem razmjene, nasumični ključevi korisnika ovlaštenih europskih COVID-19 mobilnih aplikacija koji su podijelili informaciju o zarazi bit će obrađeni na Vašem mobilnom uređaju kako bi mobilna aplikacija odredila jeste li bili u bliskom kontaktu. Također, u slučaju zaraze, Vaši nasumični ključevi bit će poslani na europski servis za razmjenu nasumičnih ključeva i obrađeni od strane ovlaštenih COVID-19 mobilnih aplikacija drugih europskih država.";
+"OtherCountriesConsentController.PopupAccept" = "Prihvati";
+"OtherCountriesConsentController.PopupCancel" = "Odustani";
+"OtherCountriesConsentController.SwitchOn" = "UKLJUČENO";
+"OtherCountriesConsentController.SwitchOff" = "ISKLJUČENO";

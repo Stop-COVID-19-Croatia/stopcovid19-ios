@@ -17,8 +17,12 @@ class FileUrlResponse: Mappable {
                 }
             }
             
-            if Configuration.isProduction {
-                uniqUrlList.removeAll(where: {LocalStorage.shared.urlCheckedList.contains($0)})
+            if LocalStorage.shared.consentToFederation {
+                uniqUrlList.removeAll { $0.contains("HR") }
+                uniqUrlList.removeAll(where: { LocalStorage.shared.urlUniqCheckedList.contains($0.replacingOccurrences(of: "-EU-", with: "-"))})
+            } else {
+                uniqUrlList.removeAll { $0.contains("EU") }
+                uniqUrlList.removeAll(where: { LocalStorage.shared.urlUniqCheckedList.contains($0.replacingOccurrences(of: "-HR-", with: "-"))})
             }
             
             return uniqUrlList

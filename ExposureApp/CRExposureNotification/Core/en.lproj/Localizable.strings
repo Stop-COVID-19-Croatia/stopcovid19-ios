@@ -55,6 +55,9 @@
 "ExposureController.TurnOffEN13.7" = "Please turn off „Share Exposure Information“ on the Stop COVID-19 Settings -> Exposure Notifications screen.";
 "ExposureController.TurnOnEN13.7" = "Please turn on „Share Exposure Information“ on the Stop COVID-19 Settings -> Exposure Notifications screen.";
 "ExposureController.Info" = "INFO";
+"ExposuresController.InternationalExchangeFormat" = "European exchange is %@";
+"ExposuresController.InternationalExchangeOn" = "On";
+"ExposuresController.InternationalExchangeOff" = "Off";
 
 // ExposuresDetailsController
 "ExposuresDetailsController.YouHaveBeenInContact" = "%@ you were in proximity to a person who shared their positive Covid-19 test result.";
@@ -100,3 +103,11 @@
 
 //ExposureManager
 "ExposureManager.Message" = "You were in contact with an infected person. Please follow further instructions.";
+
+// MARK: OtherCountriesConsentController
+"OtherCountriesConsentController.PopupTitle" = "Accept keys exchange with other European countries";
+"OtherCountriesConsentController.PopupMessage" = "By accepting the exchange, random keys of users of other authorized European COVID-19 mobile applications who have shared information about their infection will be processed on your mobile device to determine if you were in close contact. Also, in case of infection, your random keys will be sent to the European keys exchange service and processed by authorized COVID-19 mobile applications of other European countries.";
+"OtherCountriesConsentController.PopupAccept" = "Accept";
+"OtherCountriesConsentController.PopupCancel" = "Cancel";
+"OtherCountriesConsentController.SwitchOn" = "TURNED ON";
+"OtherCountriesConsentController.SwitchOff" = "TURNED OFF";

@@ -3,11 +3,12 @@ import ExposureNotification
 
 class NotifyInitialController: UIViewController {
     
+    @IBOutlet weak var ivLogoHeader: LottieCustomView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var shareDiagnosisButton: UIButton!
     @IBOutlet weak var lblListOfInfectionTitle: UILabel!
-
+    
     @IBOutlet weak var testsTableView: UITableView!
     @IBOutlet weak var testsTableViewHeight: NSLayoutConstraint!
     
@@ -21,6 +22,9 @@ class NotifyInitialController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         translateContent()
+        if !(ivLogoHeader.animationView?.isAnimationPlaying ?? true) {
+            ivLogoHeader.animationView?.play()
+        }
     }
     
     private func translateContent() {
@@ -38,7 +42,7 @@ class NotifyInitialController: UIViewController {
         reloadTableData()
     }
     
-    private func reloadTableData(){
+    private func reloadTableData() {
         sharedKeys = (Storage.readObject(key: StorageKeys.sharedKeys) as? [Date])
         if sharedKeys == nil || sharedKeys?.count == 0 {
             lblListOfInfectionTitle.isHidden = true
@@ -46,9 +50,10 @@ class NotifyInitialController: UIViewController {
             sharedKeys?.sort(by: {$0>$1})
             lblListOfInfectionTitle.isHidden = false
         }
-        self.testsTableView.reloadData()
-
+        
+        testsTableView.reloadData()
     }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         testsTableViewHeight.constant = testsTableView.contentSize.height + 32
     }
@@ -57,7 +62,8 @@ class NotifyInitialController: UIViewController {
         let controller = ConfirmResultController.instantiate {
             self.reloadTableData()
         }
-        self.present(controller, animated: true, completion: nil)
+        
+        present(controller, animated: true, completion: nil)
     }
     
     deinit {

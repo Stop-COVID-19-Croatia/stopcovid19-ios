@@ -12,6 +12,9 @@ Obavijesti o izloženosti oslanjaju se na dijeljenje i prikupljanje nasumičnih 
 /* Class = "UINavigationItem"; title = "Contact Records"; ObjectID = "YQa-vA-nlf"; */
 "YQa-vA-nlf.title" = "Contact Records";
 
+/* Class = "UILabel"; text = "In case of infection and with your consent, your keys will be temporarily stored on a server in the Republic of Croatia managed by the Ministry of Health. If you consent to exchange of keys with selected countries of interest, your keys will be temporarily stored on the servers of the selected countries."; ObjectID = "ROu-hg-dys"; */
+"ROu-hg-dys.text" = "U slučaju zaraze i uz Vaš pristanak, Vaši ključevi bit će privremeno pohranjeni na poslužitelju u Republici Hrvatskoj kojim upravlja Ministarstvo zdravstva. U slučaju davanja privole za razmjenu ključeva s drugim europskim državama, Vaši ključevi bit će privremeno pohranjeni na njihovim poslužiteljima.";
+
 /* Class = "UILabel"; text = "Možete odlučiti ugasiti obavijesti u bilo kojem trenutku."; ObjectID = "bBx-KY-2FT"; */
 "bBx-KY-2FT.text" = "Možete odlučiti ugasiti obavijesti u bilo kojem trenutku.";
 
@@ -29,9 +32,6 @@ Obavijesti o izloženosti oslanjaju se na dijeljenje i prikupljanje nasumičnih 
 
 /* Class = "UILabel"; text = "The app does not collect your personal data, like your name, surname, date of birth, address, telephone number etc."; ObjectID = "AYI-bW-M4A"; */
 "AYI-bW-M4A.text" = "Aplikacija ne prikuplja Vaše osobne podatke poput imena, prezimena, datuma rođenja, adrese, broja mobitela itd.";
-
-/* Class = "UILabel"; text = "Your data are saved on the servers in the Republic of Croatia and are controlled by the Ministry of Health."; ObjectID = "ROu-hg-dys"; */
-"ROu-hg-dys.text" = "Vaši podaci su pohranjeni na poslužitelju u Republici Hrvatskoj i njima upravlja Ministarstvo zdravstva.";
 
 /* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "VKJ-qa-KHo"; */
 "VKJ-qa-KHo.normalTitle" = "Dalje";

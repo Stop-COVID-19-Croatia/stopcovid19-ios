@@ -33,25 +33,17 @@ extension UILabel {
             attributedText = attributedString
         }
     }
-}
-
-extension NSTextAlignment {
     
-    var descripton: String {
-        switch self {
-        case .left:
-            return "left"
-        case .center:
-            return "center"
-        case .right:
-            return "right"
-        case .justified:
-            return "justified"
-        case .natural:
-            return "natural"
-        @unknown default:
-            return "left"
-        }
+    func partTextModifier(fullText: String, changeText: String, color: UIColor = .black, font: UIFont = .systemFont(ofSize: 14)) {
+        let strNumber: NSString = fullText as NSString
+        let range = (strNumber).range(of: changeText, options: .backwards)
+        let attribute = NSMutableAttributedString.init(string: fullText)
+        attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+        attribute.addAttribute(NSAttributedString.Key.font, value: font , range: range)
+
+        self.attributedText = attribute
+        self.setNeedsDisplay()
+        self.layoutIfNeeded()
     }
 }
 
