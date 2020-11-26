@@ -1,10 +1,6 @@
 import ObjectMapper
 
-enum LanguageType: Int {
-    case english = 1
-    case croatian = 2
-}
-class Language: Mappable, Equatable {
+class Language: Mappable {
     
     static let availableLanguages: [Language] = [
         Language(languageType: .english, shortTitle: "Language.ShortTitleEn".localized(), title: "Language.TitleEn".localized(), languageCode: "Language.LanguageCodeEn".localized()),
@@ -30,10 +26,6 @@ class Language: Mappable, Equatable {
         languageCode <- map["LanguageCode"]
     }
     
-    required init?(map: Map) {
-        
-    }
-    
     public static func findLanguageByType(languageType: LanguageType) -> Language {
         let language = availableLanguages.first(where: {$0.languageType == languageType})
         return language ?? getDefaultLanguage()
@@ -45,6 +37,7 @@ class Language: Mappable, Equatable {
         if let languageDefault = userDefaults.object(forKey: languageDefaultKey) as? String{
             return Language(JSONString: languageDefault)!
         }
+        
         return availableLanguages[1]
     }
     
@@ -55,11 +48,24 @@ class Language: Mappable, Equatable {
         Bundle.setLanguage(language.shortTitle?.lowercased() ?? "hr")
     }
     
-    public static func changeLanguage(language: Language, didChangeLanguage: @escaping (_ isSuccess: Bool, _ error: CustomError?) -> Void){
+    public static func changeLanguage(language: Language, didChangeLanguage: @escaping (_ isSuccess: Bool, _ error: CustomError?) -> Void) {
         Language.setDefaultLanguage(language: language)
         didChangeLanguage(true, nil)
     }
+    
+    var previewShortTitle: String {
+        switch languageType {
+        case .croatian:
+            return "Language.ShortTitleEn".localized()
+        case .english:
+            return "Language.ShortTitleHr".localized()
+        }
+    }
+    
+    required init?(map: Map) { }
+}
 
+extension Language: Equatable {
     static func == (lhs: Language, rhs: Language) -> Bool {
         return lhs.languageType == rhs.languageType
     }

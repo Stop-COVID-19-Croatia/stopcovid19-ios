@@ -3,13 +3,13 @@ import Foundation
 class LocalStorage {
     
     static let shared = LocalStorage()
-        
+    
     @Storable(userDefaultsKey: "dateLastPerformedExposureDetection", defaultValue: nil)
     var dateLastPerformedExposureDetection: Date?
     
     @Storable(userDefaultsKey: "exposureDetectionErrorLocalizedDescription", defaultValue: nil)
     var exposureDetectionErrorLocalizedDescription: String?
-  
+    
     @Storable(userDefaultsKey: "urlCheckedList", defaultValue: [])
     private var urlCheckedList: [String]
     
@@ -21,7 +21,7 @@ class LocalStorage {
     
     @Storable(userDefaultsKey: "onboardingPassed", defaultValue: false)
     var onboardingPassed: Bool
-        
+    
     @Storable(userDefaultsKey: "consentToFederation", defaultValue: false)
     var consentToFederation: Bool
     
@@ -42,6 +42,14 @@ class LocalStorage {
                 }
             }
             urlCheckedList = urls.removingDuplicates()
+        }
+    }
+    
+    func updateTransmissionRisk() {
+        if var trans =  LocalStorage.shared.transmissionRisk,
+            trans.dateOfExposure == nil {
+            trans.dateOfExposure = Date(milliseconds: Date().millisecondsSince1970  - Int64((trans.daysSinceLastExposure! * 24 * 60 * 60 * 1000)))
+            LocalStorage.shared.transmissionRisk = trans
         }
     }
 }

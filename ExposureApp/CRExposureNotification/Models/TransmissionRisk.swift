@@ -2,15 +2,18 @@ import UIKit
 import ExposureNotification
 
 struct TransmissionRisk: Codable {
+    static let VALID_TIME_FRAME = 15 * 24 * 60 * 60 * 1000
     
     var riskType: TransmissionRiskEnum = .lowRisk
     var daysSinceLastExposure: Int?
     var maximumRiskScoreFullRange: Int = 0
     var matchedKeyCount: UInt64 = 0
+    var dateOfExposure: Date?
     
     init(summary: ENExposureDetectionSummary) {
         matchedKeyCount = summary.matchedKeyCount
         daysSinceLastExposure =  summary.daysSinceLastExposure
+        dateOfLastExposure = Date()
         if let result = summary.metadata?["maximumRiskScoreFullRange"] as? Int {
             maximumRiskScoreFullRange = result
         }
@@ -50,11 +53,27 @@ struct TransmissionRisk: Codable {
     }
     
     var information : String {
-         get {
-            let currentDate = Date().millisecondsSince1970  - Int64((daysSinceLastExposure! * 24 * 60 * 60 * 1000))
-            return String(format: "ExposuresDetailsController.YouHaveBeenInContact".localized(), Date(milliseconds: currentDate).stringDMYFormat())
-         }
-     }
+        get {
+            return String(format: "ExposuresDetailsController.YouHaveBeenInContact".localized(), dateOfLastExposure.stringDMYFormat())
+        }
+    }
+    
+    var dateOfLastExposure : Date {
+        get {
+            return dateOfExposure ?? Date()
+        }
+        
+        set {
+            let currentDate = newValue.millisecondsSince1970  - Int64((daysSinceLastExposure! * 24 * 60 * 60 * 1000))
+            dateOfExposure = Date(milliseconds: currentDate)
+        }
+    }
+    
+    var valid: Bool {
+        get {
+            return Date().millisecondsSince1970 - dateOfLastExposure.millisecondsSince1970 < TransmissionRisk.VALID_TIME_FRAME
+        }
+    }
     
     var riskLongDescription : String {
         get {

@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         Language.setDefaultLanguage(language: Language.getDefaultLanguage())
         UNUserNotificationCenter.current().delegate = self
+        LocalStorage.shared.updateTransmissionRisk()
         _ = ExposureManager.shared
         BGTaskScheduler.shared.register(forTaskWithIdentifier: AppDelegate.backgroundTaskIdentifier, using: .main) { task in
             NotificationsManager.shared.showBluetoothOffUserNotificationIfNeeded()

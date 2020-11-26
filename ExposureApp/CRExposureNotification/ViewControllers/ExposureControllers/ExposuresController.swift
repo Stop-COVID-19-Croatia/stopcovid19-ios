@@ -47,10 +47,12 @@ class ExposuresController: UIViewController {
     }
     
     @objc private func setupExposureInfo() {
-        guard let transmissionRisk = LocalStorage.shared.transmissionRisk else {
-            lblNoItem.isHidden = false
-            exposureDetectionContainer.isHidden = true
-            return
+        guard let transmissionRisk = LocalStorage.shared.transmissionRisk,
+            transmissionRisk.valid else {
+                lblNoItem.isHidden = false
+                exposureDetectionContainer.isHidden = true
+                LocalStorage.shared.transmissionRisk = nil
+                return
         }
         
         lblNoItem.isHidden = true
@@ -68,7 +70,7 @@ class ExposuresController: UIViewController {
     
     private func setupLanguage() {
         titleLabel.text = "ExposuresController.Title".localized()
-        languageLabel.text = Language.getDefaultLanguage().shortTitle?.uppercased()
+        languageLabel.text = Language.getDefaultLanguage().previewShortTitle.uppercased()
     }
     
     @objc public func handleExposureNotificationStatus() {
@@ -230,8 +232,8 @@ class ExposuresController: UIViewController {
     
     private func openSettings() {
         guard let settingsUrl = URL(string: UIApplication.openSettingsURLString),
-              UIApplication.shared.canOpenURL(settingsUrl) else {
-            return
+            UIApplication.shared.canOpenURL(settingsUrl) else {
+                return
         }
         
         UIApplication.shared.open(settingsUrl)

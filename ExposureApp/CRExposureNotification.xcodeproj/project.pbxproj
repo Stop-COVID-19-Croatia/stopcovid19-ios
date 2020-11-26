@@ -86,7 +86,7 @@
 		1AD950A1248E2F280023C9E2 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD950A0248E2F280023C9E2 /* NSObject.swift */; };
 		1AD950A3248E31F90023C9E2 /* ShadowViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD950A2248E31F80023C9E2 /* ShadowViewContainer.swift */; };
 		1AD950A5248E39350023C9E2 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD950A4248E39350023C9E2 /* Icons.xcassets */; };
-		4FE926F234A1D3315256DDFE /* libPods-CRExposureNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */; };
+		729BC2E029CD0E078FD13F53 /* libPods-CRExposureNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA8CEC644EBC2602F306142 /* libPods-CRExposureNotification.a */; };
 		EF01FEC6254C2FD600C61F75 /* NSTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF01FEC5254C2FD600C61F75 /* NSTextAlignment.swift */; };
 		EF01FF17254C328000C61F75 /* icon-mask-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0A254C328000C61F75 /* icon-mask-anim.json */; };
 		EF01FF18254C328000C61F75 /* icon-risk-details-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF0B254C328000C61F75 /* icon-risk-details-anim.json */; };
@@ -101,10 +101,63 @@
 		EF01FF21254C328000C61F75 /* icon-step-3-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF14254C328000C61F75 /* icon-step-3-anim.json */; };
 		EF01FF22254C328000C61F75 /* icon-risk-high-details-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF15254C328000C61F75 /* icon-risk-high-details-anim.json */; };
 		EF01FF23254C328000C61F75 /* icon-step-5-anim.json in Resources */ = {isa = PBXBuildFile; fileRef = EF01FF16254C328000C61F75 /* icon-step-5-anim.json */; };
+		EF5798E4256E6E60000C7D87 /* LanguageTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5798E3256E6E60000C7D87 /* LanguageTypeEnum.swift */; };
 		EF6DDD4E254C33F1009021A9 /* LottieCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DDD4D254C33F1009021A9 /* LottieCustomView.swift */; };
 		EF6DDD52254C3437009021A9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6DDD51254C3437009021A9 /* Array.swift */; };
 		EFAE6C03254C2085005ABE9C /* OtherCountriesConsentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE6C02254C2085005ABE9C /* OtherCountriesConsentController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFE09A9025554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		EFE09A9225554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51BA97E8B5085EFFB47BC9C0B785CEA7;
+			remoteInfo = "lottie-ios";
+		};
+		EFE09A9425554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1B9F27862201CD82B398E0B35B14128;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		EFE09A9625554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9084FE779702931E8DF1D00A2D725FB;
+			remoteInfo = ObjectMapper;
+		};
+		EFE09A9825554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 394064536022E7F68EB4830768069F99;
+			remoteInfo = "Pods-CRExposureNotification";
+		};
+		EFE09A9A25554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 943D347E61A2E181A4FA2CA894307B6E;
+			remoteInfo = SwiftProtobuf;
+		};
+		EFE09A9C25554887001C337B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A845402EF959A57A4640F2A4F5155943;
+			remoteInfo = Zip;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0404F17324ADE79D00C93A8C /* NotificationEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEnum.swift; sourceTree = "<group>"; };
@@ -200,9 +253,9 @@
 		1AD950A0248E2F280023C9E2 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		1AD950A2248E31F80023C9E2 /* ShadowViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowViewContainer.swift; sourceTree = "<group>"; };
 		1AD950A4248E39350023C9E2 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
-		21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.debug.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.debug.xcconfig"; sourceTree = "<group>"; };
-		BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRExposureNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.release.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.release.xcconfig"; sourceTree = "<group>"; };
+		6E2A7435CFE0CCB73E3C05A9 /* Pods-CRExposureNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.release.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.release.xcconfig"; sourceTree = "<group>"; };
+		8AA8CEC644EBC2602F306142 /* libPods-CRExposureNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRExposureNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BF4E022D9C657F029F338F /* Pods-CRExposureNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRExposureNotification.debug.xcconfig"; path = "Target Support Files/Pods-CRExposureNotification/Pods-CRExposureNotification.debug.xcconfig"; sourceTree = "<group>"; };
 		EF01FEC5254C2FD600C61F75 /* NSTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextAlignment.swift; sourceTree = "<group>"; };
 		EF01FF0A254C328000C61F75 /* icon-mask-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-mask-anim.json"; sourceTree = "<group>"; };
 		EF01FF0B254C328000C61F75 /* icon-risk-details-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-risk-details-anim.json"; sourceTree = "<group>"; };
@@ -217,9 +270,11 @@
 		EF01FF14254C328000C61F75 /* icon-step-3-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-3-anim.json"; sourceTree = "<group>"; };
 		EF01FF15254C328000C61F75 /* icon-risk-high-details-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-risk-high-details-anim.json"; sourceTree = "<group>"; };
 		EF01FF16254C328000C61F75 /* icon-step-5-anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "icon-step-5-anim.json"; sourceTree = "<group>"; };
+		EF5798E3256E6E60000C7D87 /* LanguageTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTypeEnum.swift; sourceTree = "<group>"; };
 		EF6DDD4D254C33F1009021A9 /* LottieCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCustomView.swift; sourceTree = "<group>"; };
 		EF6DDD51254C3437009021A9 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		EFAE6C02254C2085005ABE9C /* OtherCountriesConsentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCountriesConsentController.swift; sourceTree = "<group>"; };
+		EFE09A8625554887001C337B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE926F234A1D3315256DDFE /* libPods-CRExposureNotification.a in Frameworks */,
+				729BC2E029CD0E078FD13F53 /* libPods-CRExposureNotification.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +340,7 @@
 				046D9C4A2490ED8A00D54250 /* ErrorCodeEnum.swift */,
 				043B4CC424A8AD4300ED774A /* TransmissionRiskEnum.swift */,
 				0404F17324ADE79D00C93A8C /* NotificationEnum.swift */,
+				EF5798E3256E6E60000C7D87 /* LanguageTypeEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -454,7 +510,7 @@
 				1AD80B8F247E7A7D00F72046 /* CRExposureNotification */,
 				1AD80B8E247E7A7D00F72046 /* Products */,
 				D04CFE7465A45763720FEFCD /* Pods */,
-				3138922B5F24BFF20D7C19DE /* Frameworks */,
+				CEACA4FEBBA055F38EA5A5FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -563,10 +619,11 @@
 			path = LanguageButton;
 			sourceTree = "<group>";
 		};
-		3138922B5F24BFF20D7C19DE /* Frameworks */ = {
+		CEACA4FEBBA055F38EA5A5FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAE25A59FB930F119DB3359C /* libPods-CRExposureNotification.a */,
+				EFE09A8625554887001C337B /* Pods.xcodeproj */,
+				8AA8CEC644EBC2602F306142 /* libPods-CRExposureNotification.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -574,8 +631,8 @@
 		D04CFE7465A45763720FEFCD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */,
-				D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */,
+				D8BF4E022D9C657F029F338F /* Pods-CRExposureNotification.debug.xcconfig */,
+				6E2A7435CFE0CCB73E3C05A9 /* Pods-CRExposureNotification.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -600,6 +657,20 @@
 			path = AnimationFiles;
 			sourceTree = "<group>";
 		};
+		EFE09A8725554887001C337B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE09A9125554887001C337B /* libAlamofire.a */,
+				EFE09A9325554887001C337B /* liblottie-ios.a */,
+				EFE09A9525554887001C337B /* libNVActivityIndicatorView.a */,
+				EFE09A9725554887001C337B /* libObjectMapper.a */,
+				EFE09A9925554887001C337B /* libPods-CRExposureNotification.a */,
+				EFE09A9B25554887001C337B /* libSwiftProtobuf.a */,
+				EFE09A9D25554887001C337B /* libZip.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -607,7 +678,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD80BA1247E7A8000F72046 /* Build configuration list for PBXNativeTarget "CRExposureNotification" */;
 			buildPhases = (
-				07F2B99313FC8903B196D16C /* [CP] Check Pods Manifest.lock */,
+				DB977833148C9CE308DFBE06 /* [CP] Check Pods Manifest.lock */,
 				1AD80B89247E7A7D00F72046 /* Sources */,
 				1AD80B8A247E7A7D00F72046 /* Frameworks */,
 				1AD80B8B247E7A7D00F72046 /* Resources */,
@@ -628,7 +699,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "APIS IT";
 				TargetAttributes = {
 					1AD80B8C247E7A7D00F72046 = {
@@ -649,12 +720,70 @@
 			mainGroup = 1AD80B84247E7A7D00F72046;
 			productRefGroup = 1AD80B8E247E7A7D00F72046 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFE09A8725554887001C337B /* Products */;
+					ProjectRef = EFE09A8625554887001C337B /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1AD80B8C247E7A7D00F72046 /* CRExposureNotification */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EFE09A9125554887001C337B /* libAlamofire.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAlamofire.a;
+			remoteRef = EFE09A9025554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9325554887001C337B /* liblottie-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liblottie-ios.a";
+			remoteRef = EFE09A9225554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9525554887001C337B /* libNVActivityIndicatorView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNVActivityIndicatorView.a;
+			remoteRef = EFE09A9425554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9725554887001C337B /* libObjectMapper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectMapper.a;
+			remoteRef = EFE09A9625554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9925554887001C337B /* libPods-CRExposureNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-CRExposureNotification.a";
+			remoteRef = EFE09A9825554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9B25554887001C337B /* libSwiftProtobuf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSwiftProtobuf.a;
+			remoteRef = EFE09A9A25554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE09A9D25554887001C337B /* libZip.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZip.a;
+			remoteRef = EFE09A9C25554887001C337B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1AD80B8B247E7A7D00F72046 /* Resources */ = {
@@ -699,7 +828,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07F2B99313FC8903B196D16C /* [CP] Check Pods Manifest.lock */ = {
+		DB977833148C9CE308DFBE06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -741,6 +870,7 @@
 				043B4CC724A8ADA800ED774A /* TransmissionRisk.swift in Sources */,
 				049A1BFF248F6B63008D383B /* UIFont.swift in Sources */,
 				EFAE6C03254C2085005ABE9C /* OtherCountriesConsentController.swift in Sources */,
+				EF5798E4256E6E60000C7D87 /* LanguageTypeEnum.swift in Sources */,
 				1A98CE74247FF53D0099BD76 /* StorageKeys.swift in Sources */,
 				1A597898248FB0EF00E9ABA3 /* Date.swift in Sources */,
 				046D9C492490ECE700D54250 /* CustomError.swift in Sources */,
@@ -886,6 +1016,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -948,6 +1079,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -978,7 +1110,7 @@
 		};
 		1AD80BA2247E7A8000F72046 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21596A200E7F516B296D9AED /* Pods-CRExposureNotification.debug.xcconfig */;
+			baseConfigurationReference = D8BF4E022D9C657F029F338F /* Pods-CRExposureNotification.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -987,7 +1119,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -996,7 +1128,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";
@@ -1009,7 +1141,7 @@
 		};
 		1AD80BA3247E7A8000F72046 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8BCE6724A49ED64D2BB2BB0 /* Pods-CRExposureNotification.release.xcconfig */;
+			baseConfigurationReference = 6E2A7435CFE0CCB73E3C05A9 /* Pods-CRExposureNotification.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1018,7 +1150,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -1027,7 +1159,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";

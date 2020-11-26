@@ -6,7 +6,7 @@
 
 // MARK: ErrorHandler
 "ErrorHandler.InternalError" = "Dogodila se pogreška. Molimo pokušajte ponovo kasnije.";
-"ErrorHandler.NoInternetError" = "Nije dostupna internetska veza. Povežite se i pokušajte ponovo.";
+"ErrorHandler.NoInternetError" = "Nema internet konekcije. Povežite se i pokušajte ponovo.";
 "ErrorHandler.Invalid" = "Autorizacijski kod nije ispravan";
 "ErrorHandler.Expired" = "Autorizacijski kod je istekao";
 "ErrorHandler.InvalidCall" = "Neispravan poziv";
@@ -95,10 +95,10 @@
 
 "TransmissionRisk.RiskShortDescriptionLow" = "Bili ste u kontaktu sa zaraženom osobom.";
 "TransmissionRisk.RiskShortDescriptionMedium" = "Bili ste u rizičnom kontaktu sa zaraženom osobom.";
-"TransmissionRisk.RiskShortDescriptionHigh" = "Bili ste u bliskom visoko rizičnom kontaktu sa zaraženom osobom.";
+"TransmissionRisk.RiskShortDescriptionHigh" = "Bili ste u bliskom visokorizičnom kontaktu sa zaraženom osobom.";
 
-"TransmissionRisk.RiskLongDescriptionLow" = "Pratite svoje simptome narednih dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
-"TransmissionRisk.RiskLongDescriptionMedium" = "Pratite svoje simptome narednih dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionLow" = "Pratite svoje simptome naredna dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionMedium" = "Pratite svoje simptome naredna dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
 "TransmissionRisk.RiskLongDescriptionHigh" = "Ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
 
 //ExposureManager
