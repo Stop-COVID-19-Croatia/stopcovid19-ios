@@ -97,8 +97,8 @@
 "TransmissionRisk.RiskShortDescriptionMedium" = "Bili ste u rizičnom kontaktu sa zaraženom osobom.";
 "TransmissionRisk.RiskShortDescriptionHigh" = "Bili ste u bliskom visokorizičnom kontaktu sa zaraženom osobom.";
 
-"TransmissionRisk.RiskLongDescriptionLow" = "Pratite svoje simptome naredna dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
-"TransmissionRisk.RiskLongDescriptionMedium" = "Pratite svoje simptome naredna dva tjedna putem aplikacije Andrija. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionLow" = "Pratite svoje simptome naredna dva tjedna. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
+"TransmissionRisk.RiskLongDescriptionMedium" = "Pratite svoje simptome naredna dva tjedna. Nosite masku prilikom  izlaska iz kuće i izbjegavajte kontakte sa starijim osobama. Ukoliko razvijete simptome, ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
 "TransmissionRisk.RiskLongDescriptionHigh" = "Ostanite kod kuće i nazovite svog liječnika koji će Vam dati daljnje upute. Recite mu da koristite ovu aplikaciju.";
 
 //ExposureManager

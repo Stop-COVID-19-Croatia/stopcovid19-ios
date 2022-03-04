@@ -1128,7 +1128,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";
@@ -1159,7 +1159,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";
