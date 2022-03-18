@@ -1119,7 +1119,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -1128,7 +1128,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";
@@ -1150,7 +1150,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WW8M77FMRK;
 				INFOPLIST_FILE = CRExposureNotification/Core/Info.plist;
@@ -1159,7 +1159,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hr.miz.evidencijakontakata;
 				PRODUCT_NAME = "Stop COVID-19";
 				PROVISIONING_PROFILE_SPECIFIER = "Evidencija kontakata Dev";

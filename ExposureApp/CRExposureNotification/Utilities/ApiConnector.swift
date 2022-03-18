@@ -1,23 +1,22 @@
 import UIKit
-
 import Alamofire
 import ObjectMapper
 
 class ApiConnector {
-
+    
     private static let authHeaderKey = "authorization-code"
     static var headers: HTTPHeaders = {
         return [:]
     }()
     private static let configuration: URLSessionConfiguration = {
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 60
-        configuration.timeoutIntervalForResource = 60
+        configuration.timeoutIntervalForRequest = 120
+        configuration.timeoutIntervalForResource = 120
         return configuration
     }()
     
     private static var manager: Alamofire.SessionManager?
-   private static var httpManager: Alamofire.SessionManager = {
+    private static var httpManager: Alamofire.SessionManager = {
         if manager == nil {
             let serverTrustPolicies: [String: ServerTrustPolicy] = [
                 Configuration.urlHost!: .disableEvaluation

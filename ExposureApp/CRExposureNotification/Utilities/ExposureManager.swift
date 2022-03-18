@@ -109,9 +109,10 @@ class ExposureManager {
         ExposuresProvider.getUrls(success: { (response) in
             let dispatchGroup = DispatchGroup()
             var localURLResults = [Result<[URL], Error>]()
-            for i in 0..<response.uniqUrlList.count {
+            let uniq = response.uniqUrlList
+            for i in 0..<uniq.count {
                 dispatchGroup.enter()
-                let remoteUrl = response.uniqUrlList[i]
+                let remoteUrl = uniq[i]
                 ExposuresProvider.downloadDiagnosisKeyFile(zipName: i.description, at: remoteUrl, completion: { (result) in
                     localURLResults.append(result)
                     dispatchGroup.leave()
